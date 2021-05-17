@@ -14,6 +14,7 @@
     <title>Copplinn | Sound & Engineered</title>
 </head>
 <body>
+    <div id="loading" class="loading"><img  oncontextmenu="return false" onselectstart="return false" ondragstart="return false" class="logo animate-flicker" src="img/copplinn.png"></div>
     <div class="nav">
         <a href="index.html"><h1>Copplinn</h1></a>
     </div>
@@ -72,14 +73,14 @@
     </section>
     <section id="alulaNext">
         <div class="space" ></div>
-        <div data-aos="fade-right" class="alulaText">
+        <div class="alulaText">
         <h1>Relic</h1>
         <p> Memories are sacred to all of us. They want to be remembered. <br>
             Thanks to hearing, halographic structures in our brain allow us to re-enact our memories. <br>
            <strong>Clear and detailed </strong> sound is the most important factor for us to feel the transfer of emotions in our memories better.</p>
         <!-- -- -->
     </div>
-        <div data-aos="fade-left" class="emo">
+        <div  class="emo">
         <h1>Emotions</h1>
         <p>Alula's sound can stimulate holograms in our brain, making you feel your emotions deeper.</p>
     </div>
@@ -87,7 +88,7 @@
     <section id="tech"></section>
     <section id="show">
         <div class="row"  id="warranty">
-            <div data-aos-duration="1000" data-aos="fade-right" class="card">
+            <div  data-aos="fade-right" class="card">
                 <i class="fa fa-leaf" ></i>
                 <h2>ALULA Made <br> From %99 Natural Materials</h2>
                 <p>We use %99 recyclable material.</p>
@@ -106,19 +107,19 @@
                 </ul>
             </div>
             <!-- -- -->
-            <div data-aos-duration="1000" data-aos="fade-up" class="card">
+            <div  data-aos="fade-up" class="card">
                 <i class="fa fa-check" ></i>
                 <h2>1 Year <br> Warranty</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
             </div>
             <!-- -- -->
-            <div data-aos-duration="1000" data-aos="fade-up" class="card">
+            <div data-aos="fade-up" class="card">
                 <i class="fa fa-hands"></i>
                 <h2>Hand Made <br> Design.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
             </div>
             <!-- -- -->
-            <div data-aos-duration="1000" data-aos="fade-left"  class="card">
+            <div data-aos="fade-left"  class="card">
                 <i class="fa fa-comments"></i>
                 <h2>Be Friend.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
@@ -280,6 +281,10 @@
 
 
 <script>
+window.onload = function() {
+document.getElementById('loading').style.display = 'none';
+};
+
 myID = document.getElementById("myID");
 
 var myScrollFunc = function () {
