@@ -76,13 +76,26 @@ a{
     text-decoration: none;
 }
 .nav{
+    animation: nav 4s ease-in;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.795);
     position: fixed;
     top: 0;
     width: 100%;
 }
+@keyframes nav {
+    0%{background-color: rgba(0, 0, 0, 0.07);}
+    10%{background-color: rgba(0, 0, 0, 0.07);}
+    100%{background-color: rgba(0, 0, 0, 0.795);}
+    
+}
+@keyframes cop {
+    0%{color: black;}
+    100%{color: #beb08a;}
+    
+}
 .nav h1{
+    animation: cop 4s ease-in;
     width: 50%;
     padding: 0;
     margin: 1% auto;
@@ -97,7 +110,10 @@ a{
 
 #main{
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    background: url(img/main.webp) no-repeat;
+    background-size:100%;
+    background-position: center 3%;
+    background-attachment: fixed;
 }
 .vidmain{
     position: absolute;
@@ -113,7 +129,7 @@ height: 100vh;
 }
 
 #tech{
-    background: url(img/3.png) no-repeat center;
+    background: url(img/3.webp) no-repeat center;
     background-size: 100%;
 }
 #show{
@@ -141,6 +157,9 @@ section:nth-child(6){
     z-index: 1;
     transition: all .3s;
 }
+.bottomMenu:hover .in{
+    background-color: rgba(255, 255, 255, 0.041);
+}
 .hide {
     opacity:0;
 }
@@ -149,6 +168,7 @@ section:nth-child(6){
     opacity:1;
 }
 .in{
+    transition: 0.5s ease-in-out;
     padding: 30px 40px;
     background-color: rgba(0, 0, 0, 0.038);
     backdrop-filter: blur(8px);
@@ -191,7 +211,7 @@ section:nth-child(6){
     height: 95vh;
 }
 .left:hover{
-    transition: ease-in-out;
+    transition: 0.5s ease-in-out;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.809), rgba(0, 0, 0, 0.804)), url(img/left.webp) no-repeat center;
     backdrop-filter: blur(20px);
     background-size: cover;
@@ -246,6 +266,7 @@ section:nth-child(6){
     height: 9vh;
 }
 #alulaNext .alulaText{
+    align-items:flex-start;
     background-color: rgba(255, 255, 255, 0);
     width: 34%;
     border-radius: 15px;
@@ -257,15 +278,17 @@ section:nth-child(6){
 }
 #alulaNext .alulaText h1{
     text-align: left;
+    float: left;
     margin: 0;
     padding: 0;
     letter-spacing: 8px;
     font-size: 40px !important;
+    font-weight: 400;
 }
 #alulaNext .alulaText p{
     text-align: left;
     margin-top: 10px;
-    color: black;
+    color: rgb(240, 240, 240);
     width: 100%;
 }
 #alulaNext h1{
@@ -295,7 +318,7 @@ section:nth-child(6){
 .emo h1{
     margin: 0;
     padding-bottom: 0;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     font-size: 37px !important;
 }
 .emo p{  
@@ -334,7 +357,7 @@ section:nth-child(6){
     margin: 0 8px;
     border-radius: 20px;
     color: rgb(253, 241, 218);
-    background-color: #6c32116b;
+    background-color: unset;
 }
 .card:nth-child(1){
     background-color: rgba(0, 0, 0, 0.274);
@@ -680,6 +703,29 @@ section:nth-child(6){
     width: 2.5%;
 }
 @media only screen and (max-width:800px) {
+    /* ScrollBar_____________________________ */
+ html {
+    --scrollbarBG: #00000000;
+    --thumbBG: rgba(219, 208, 173, 0);
+  }
+  body::-webkit-scrollbar {
+    width: 5px;
+  
+  }
+  body {
+    scrollbar-width:thick;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 1px solid var(--scrollbarBG);
+  }
+  /* ______________________________________________ */
     .nav{
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.895);
@@ -859,7 +905,7 @@ section:nth-child(6){
 }
 #tech{
     height: 50vh;
-    background: url(img/3.png) no-repeat center;
+    background: url(img/3.webp) no-repeat center;
     background-size: 195%;
 }
 #show{
