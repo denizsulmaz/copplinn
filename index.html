@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="js/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/dist/aos.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Copplinn | Sound & Engineered</title>
 </head>
@@ -33,15 +32,15 @@
         </div>
     </div>
     <section id="main">
-        <video class="vidmain" loop autoplay muted>
-            <source src="https://www.apple.com/media/us/mac-pro/2013/16C1b6b5-1d91-4fef-891e-ff2fc1c1bb58/videos/macpro_main_desktop.mp4" type="video/mp4">
-        </video>
+        <!-- <video class="vidmain" loop autoplay muted>
+            <source src="https://.mp4" type="video/mp4">
+        </video> -->
     </section>
 
     <section id="alula">
         <div class="row">
     <div class="left">
-        <div data-aos="zoom-out" data-aos-duration="1000" class="alulaText">
+        <div   class="alulaText">
         <h1>ALULA</h1>
         <p>In the distal parts of the constellation's tail and head, three striking star pairs glitter; 
         Alula, Tania, Talitha. These are the footprints of the first, second and third leaps of a gazelle.</p>
@@ -55,7 +54,7 @@
     </div>
      <!-- ------ -->
     <div class="right">
-        <div data-aos="zoom-out" data-aos-duration="1000" class="alulaText">
+        <div   class="alulaText">
             <h1>ALULA+</h1>
             <p>2-Way Driver <br>
                 Electro-magnetic woofer and Electro-magnetic tweeter. <br> <br><br>
@@ -88,7 +87,7 @@
     <section id="tech"></section>
     <section id="show">
         <div class="row"  id="warranty">
-            <div  data-aos="fade-right" class="card">
+            <div class="card tilt">
                 <i class="fa fa-leaf" ></i>
                 <h2>ALULA Made <br> From %99 Natural Materials</h2>
                 <p>We use %99 recyclable material.</p>
@@ -107,19 +106,19 @@
                 </ul>
             </div>
             <!-- -- -->
-            <div  data-aos="fade-up" class="card">
+            <div    class="card">
                 <i class="fa fa-check" ></i>
                 <h2>1 Year <br> Warranty</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
             </div>
             <!-- -- -->
-            <div data-aos="fade-up" class="card">
+            <div   class="card">
                 <i class="fa fa-hands"></i>
                 <h2>Hand Made <br> Design.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
             </div>
             <!-- -- -->
-            <div data-aos="fade-left"  class="card">
+            <div class="card">
                 <i class="fa fa-comments"></i>
                 <h2>Be Friend.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
@@ -136,7 +135,7 @@
     </div>
     <!-- -- -->
     <div class="titbuy">
-    <a href="https://www.etsy.com/listing/782404435/copplinn-alula-mahogany?ref=shop_home_feat_1&frs=1" class="buy">Buy Now</a>
+    <a href="https://www.etsy.com/shop/CopplinnSound" class="buy">Buy Now</a>
     </div>
     <!-- -- -->
     <div class="titaniumTwo">
@@ -184,7 +183,7 @@
                 <hr>
                 <h3>Cagan TUNALI / <a href="https://www.instagram.com/noiseist/">Noiseist Records</a> </h3>  
             </div>
-            <img src="img/3.webp" alt="">
+            <img src="img/left.webp" alt="">
         </div>
     </div>
 
@@ -298,7 +297,7 @@ var myScrollFunc = function () {
 
 window.addEventListener("scroll", myScrollFunc);
 
-AOS.init();
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -328,6 +327,14 @@ function showSlides(n) {
   setTimeout(showSlides, 6000); // Change image every 2 seconds
 
 }
+
+  	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 15,
+    speed: 500,
+    
+
+	});
+
 </script>
 </body>
 </html>
