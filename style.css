@@ -25,6 +25,7 @@
   }
   /* ______________________________________________ */
 html{
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 html, body{
