@@ -53,10 +53,10 @@ body{
     width: 100%;
     background:rgb(0, 0, 0);
     animation: fade 3.5s ease-out;
-  }
+}
 @keyframes fade {
-    from{diplay:inline-block;}
-    to{display:none; !important}
+      from{display: inline-block;}
+    to{display: none;}
 }
   .loading .logo{
     width: 12%;
