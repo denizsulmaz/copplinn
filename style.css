@@ -55,8 +55,8 @@ body{
     animation: fade 3.5s ease-out;
   }
 @keyframes fade {
-    from{opacity:1;}
-    to{opacity:0; !important}
+    from{diplay:inline-block;}
+    to{display:none; !important}
 }
   .loading .logo{
     width: 12%;
