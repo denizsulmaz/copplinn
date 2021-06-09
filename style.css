@@ -45,7 +45,7 @@ body{
 
 /* ---------------------Loading */
 .loading{
-    display:none;
+    display:inline-block;
     position: fixed;
     top: 0;
     left: 0;
