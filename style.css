@@ -45,6 +45,7 @@ body{
 
 /* ---------------------Loading */
 .loading{
+    display:none;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +57,8 @@ body{
 }
 @keyframes fade {
       from{display: inline-block;}
-    to{display: none;}
+    to{display: none !important;
+    }
 }
   .loading .logo{
     width: 12%;
