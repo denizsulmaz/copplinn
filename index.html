@@ -1,1375 +1,403 @@
-:root{
-    --gold:rgba(219, 208, 173, 0.816);
-}
- /* ScrollBar_____________________________ */
- html {
-    --scrollbarBG: #000000;
-    --thumbBG: rgba(219, 208, 173, 0.816);
-  }
-  body::-webkit-scrollbar {
-    width: 5px;
-  
-  }
-  body {
-    scrollbar-width:thick;
-    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  }
-  body::-webkit-scrollbar-track {
-    background: var(--scrollbarBG);
-  
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--thumbBG) ;
-    border-radius: 6px;
-    border: 1px solid var(--scrollbarBG);
-  }
-  /* ______________________________________________ */
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-html, body{
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: black;
-    overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
-}
-@font-face {
-    font-family: copplinn;
-    src: url(img/copplinn.otf);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script src="js/vanilla-tilt.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/copplinnIco.ico" type="image/x-icon">
+    <title>Copplinn | Sound & Engineered</title>
+</head>
+<body>
+    <div id="loading" class="loading"><img  oncontextmenu="return false" onselectstart="return false" ondragstart="return false" class="logo animate-flicker" src="img/copplinn.png"></div>
+    <div class="nav">
+        <a href="index.html"><h1>Copplinn</h1></a>
+    </div>
+    <!-- SideNav -->
+    <div id="myID" class="bottomMenu hide">
+        <div class="in">
+            <ul>
+                <a href="#alula"><li>Alula</li></a>
+                <a href="#tech"><li>Tech</li></a>
+                <a href="#warranty"><li>Warranty</li></a>
+                <a href="#titanium"><li>Titanium</li></a>
+                <a href="#reviews"><li>Reviews</li></a>
+                <a href="#details"><li>Details</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    <section id="main">
+        <div class="buynow" id="butto">
+            <div id="dub-arrow"><i class="far fa-shopping-bag"></i></div>
+            <a href="#">Buy Now</a>
+          </div>
+        <!-- <video class="vidmain" loop autoplay muted>
+            <source src="https://.mp4" type="video/mp4">
+        </video> -->
+    </section>
 
-/* ---------------------Loading */
-.loading{
-    display:none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:999;
-    height:100vh;
-    width: 100%;
-    background:rgb(0, 0, 0);
-    animation: fade 3.5s ease-out;
-}
-@keyframes fade {
-      from{display: inline-block;}
-    to{display: none !important;
-    }
-}
-  .loading .logo{
-    width: 12%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-    padding-top:20%;
-  }
-  @keyframes flickerAnimation { /* flame pulses */
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  .animate-flicker {
-      opacity:1;  
-      animation: flickerAnimation 2s infinite;
-  }
-  /* -----------------------Loading F */
-section{
-    height: 100vh;
-}
-a{
-    text-decoration: none;
-}
-.nav{
-    animation: nav 5s ease-in;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.795);
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-@keyframes nav {
-    0%{background-color: rgba(0, 0, 0, 0.07);}
-    10%{background-color: rgba(0, 0, 0, 0.07);}
-    100%{background-color: rgba(0, 0, 0, 0.795);}
+    <section id="alula">
+        <div class="row">
+    <div class="left">
+        <div   class="alulaText">
+        <h1>ALULA</h1>
+        <p>In the distal parts of the constellation's tail and head, three striking star pairs glitter; 
+        Alula, Tania, Talitha. These are the footprints of the first, second and third leaps of a gazelle.</p>
+        
+        <p>Here is Alula. Discover the natural and soft sound of ALULA that is renewed by the acoustic strong bodied 
+        of the famous Spanish mahogany tree, which has long production time and heat processing.</p>
+            <br><br>
+        
+        <a href="https://www.etsy.com/listing/720697287/copplinn-alula-olive?ref=shop_home_recs_4&frs=1" target="_blank" rel="noopener noreferrer" class="buy">Buy Now</a>
+    </div>
+    </div>
+     <!-- ------ -->
+    <div class="right">
+        <div   class="alulaText">
+            <h1>ALULA+</h1>
+            <p>2-Way Driver <br>
+                Electro-magnetic woofer and Electro-magnetic tweeter. <br> <br><br>
+                Frequency Range: 20-40000 Hz <br><br><br>
+                This technology provide the rich sound. The all bass and treble are come to your ears different channels.
+                
+                Recommended for audiophiles or music production professionals.</p>
+                <br><br><br>
+            
+            <a href="https://www.etsy.com/listing/782404435/copplinn-alula-mahogany?ref=shop_home_feat_1&frs=1" target="_blank" rel="noopener noreferrer" class="buy">Buy Now</a>
+        </div>
+    </div>
+        <!-- ------ -->
+    </div>
+    </section>
+    <section id="alulaNext">
+        <div class="space" ></div>
+        <div class="alulaText">
+        <h1>Relic</h1>
+        <p> Memories are sacred to all of us. They want to be remembered. <br>
+            Thanks to hearing, halographic structures in our brain allow us to re-enact our memories. <br>
+           <strong>Clear and detailed </strong> sound is the most important factor for us to feel the transfer of emotions in our memories better.</p>
+        <!-- -- -->
+    </div>
+        <div  class="emo">
+        <h1>Emotions</h1>
+        <p>Alula's sound can stimulate holograms in our brain, making you feel your emotions deeper.</p>
+    </div>
+    </section>
+    <section id="tech"></section>
+    <section id="show">
+        <div class="row"  id="warranty">
+            <div class="card tilt">
+                <i class="fa fa-leaf" ></i>
+                <h2>ALULA Made <br> From %99 Natural Materials</h2>
+                <p>We use %99 recyclable material.</p>
+                <ul>
+                <div class="row">
+                <div class="column">
+                    <li>Wood</li>
+                    <li>Titanium</li>
+                    <li>Copper</li>
+                </div>
+                <div class="column">
+                    <li>Silver</li>
+                    <li>Leather</li>
+                </div>
+            </div>
+                </ul>
+            </div>
+            <!-- -- -->
+            <div    class="card">
+                <i class="fa fa-check" ></i>
+                <h2>1 Year <br> Warranty</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
+            </div>
+            <!-- -- -->
+            <div   class="card">
+                <i class="fa fa-hands"></i>
+                <h2>Hand Made <br> Design.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
+            </div>
+            <!-- -- -->
+            <div class="card">
+                <i class="fa fa-comments"></i>
+                <h2>Be Friend.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis.</p>
+            </div>
+            <!-- - -->
+        </div>    
+    </section>
+    <section id="titanium">
+    <div class="space"></div>
+    <div class="titaniumOne">
+        <h1>Titanium Nozzle</h1>
+        <p>In order to hear detailed and accurate sound, it is necessary to be free from environmental noise and ambient sound. 
+        That's why we used space titanium in the nozzle section, which provides superior passive insulation.</p>
+    </div>
+    <!-- -- -->
+    <div class="titbuy">
+    <a href="https://www.etsy.com/shop/CopplinnSound" class="buy">Buy Now</a>
+    </div>
+    <!-- -- -->
+    <div class="titaniumTwo">
+        <h1>Frequency Filtering System</h1>
+        <p>The resonance frequencies are 3500 hz in architectural acoustics and 13500 hz in stage acoustics.
+            Avoid resonance frequencies thanks to the frequency filtering system.</p>
+    </div>
+    </section>
+    <section id="reviews">
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="row">
+            <div class="text">
+                <p>I designed this headphones, which has the power of detail and makes the scene feel. In these seven years we worked on, I 
+    accepted it as our first priority to discover emotions that you did not realize or discover, and increased the variety of emotions you feel.</p>
+                <hr>
+                <h3>Stereo Mecmuası / Turkish Electronic Journal on Hifi and Music</h3>  
+            </div>
+            <img src="img/1.webp" loading="lazy" alt="">
+        </div>
+    </div>
     
-}
-@keyframes cop {
-    0%{color: black;}
-    100%{color: #beb08a;}
+    <div class="mySlides fade">
+        <div class="row">
+            <div class="text">
+                <p>The Copplinn Team has done a great job! 🌟
+                    The first thing that comes to mind when I see these designer headphones ... The past seems to have adapted to the present ... It is so obvious that everything has been carefully considered from the cable to the box! And how this headphones goes beyond the "headphones" idea and turns into an object of desire ... ✨
+                    I have no words to say about the quality of its sound anyway!
+                    May the roads be clear! Good luck! 🍀</p>
+                <hr>
+                <h3>Designer and Color Specialist</h3>  
+            </div>
+            <img src="img/2.webp" loading="lazy" alt="">
+        </div>
+    </div>
     
-}
+    <div class="mySlides fade">
+        <div class="row">
+            <div class="text">
+                <p>Great design!
+                    A soft and transparent headphones, especially the treble frequencies are extremely soft.
+                    I strongly recommend you to try it. You will be able to enjoy music on the move.</p>
+                <hr>
+                <h3>Cagan TUNALI / <a href="https://www.instagram.com/noiseist/">Noiseist Records</a> </h3>  
+            </div>
+            <img src="img/left.webp" loading="lazy" alt="">
+        </div>
+    </div>
 
-.nav h1{
-    animation: cop 5s ease-in;
-    width: 50%;
-    padding: 0;
-    margin: 1% auto;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    color: #beb08a;
-    font-family: 'copplinn';
-    letter-spacing: 5px;
-    font-weight: 100;
-}
-
-#main{
-    overflow: hidden;
-    background: url(img/main.webp) no-repeat;
-    background-size:100%;
-    background-position: center 3%;
-    background-attachment: fixed;
-}
-.buynow {
-    position: absolute;
-    left: 95px;
-    top: 650px;
-    display: inline-flex;
-    height: 50px;
-    width: 150px;
-    border: 2px solid rgb(0, 0, 0);
-    margin: 20px 20px 20px 20px;
-    color: rgb(58, 54, 46);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: .8em;
-    letter-spacing: 1.5px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .buynow:hover{
-      border-radius: 8px;
-  }
-#butto{
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  #butto a {
-    color: black;
-    font-weight:500;
-    font-size: 18px;
-    position: relative;
-    left: 0;
-    transition: all .35s ease-Out;
-  }
-  
-  #dub-arrow {
-    width: 100%;
-    height: 100%;
-    background: var(--gold);
-    left: -200px;
-    position: absolute;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .35s ease-Out;
-    bottom: 0;
-  }
-  
-  #butto i {
-    font-size: 25px;
-    height: auto;
-  }
-  
-  #butto:hover #dub-arrow {
-    left: 0;
-  }
-  
-  #butto:hover a {
-    left: 150px;
-  }
-/* .vidmain{
-    position: absolute;
-    top: 0;
-    margin: 10vh 18%;
-    padding: 0;
-    height: 90vh;
-    display: block;
-    overflow: hidden !important;
-}
-source{
-height: 100vh;
-} */
-
-#tech{
-    background: url(img/3.webp) no-repeat center;
-    background-size: 100%;
-}
-#show{
-    background: url(img/2.webp) no-repeat center;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-#titanium{
-    background:black;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-section:nth-child(6){
-    background-attachment: fixed;
-    background-color: rgb(11, 13, 107);
-}
-.bottomMenu {
-    position: fixed;
-    right: 20px;
-    top: 15vh;
-    color: white;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0);
-    z-index: 1;
-    transition: all .3s;
-}
-.bottomMenu:hover .in{
-    background-color: rgba(255, 255, 255, 0.041);
-}
-.hide {
-    opacity:0;
-}
-.show {
-    height: 150vh !important;
-    opacity:1;
-}
-.in{
-    transition: 0.5s ease-in-out;
-    padding: 30px 40px;
-    background-color: rgba(0, 0, 0, 0.038);
-    backdrop-filter: blur(8px);
-    border-radius: 18px;
-    margin-top: 5%;
-}
-.in ul{
-    text-align: right;
-}
-.in li:nth-child(1){
-    margin-top: 0;
-    padding-top: 0;
-}
-#contact{
-    padding: 0;
-}
-.in ul li{
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.322);
-    color:  #ebe4d1d0;
-    font-size: 25px;
-    list-style: none;
-    padding: 45px 0;
-}
-.in ul li:hover{
-    color:#FCDFD0 ;
-    text-decoration: 1px solid white;
-}
-/* ----------alula */
-#alula{
-    height: auto;
-    background: url(img/1.webp) no-repeat center;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-.left{
-    transition: 0.5s ease-in-out;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.604)), url(img/left.webp) no-repeat center;
-    background-size: cover;
-    height: 95vh;
-}
-.left:hover{
-    transition: 0.5s ease-in-out;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.809), rgba(0, 0, 0, 0.804)), url(img/left.webp) no-repeat center;
-    backdrop-filter: blur(20px);
-    background-size: cover;
-    height: 95vh;
-    width: 100%;
-}
-.right{
-    transition: 0.5s ease-in-out;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(48, 44, 31, 0.608), rgba(51, 47, 35, 0.605)), url(img/right.webp) no-repeat center;
-    background-size: cover;
-    height: 95vh;
-}
-.right:hover{
-    width: 100%;
-    background: linear-gradient(0deg, rgba(48, 44, 31, 0.808), rgba(51, 47, 35, 0.805)), url(img/right.webp) no-repeat center;
-    background-size: cover;
-    height: 95vh;
-}
-.alulaText{
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.alulaText h1{
-    letter-spacing: 8px;
-    font-size: 40px !important;
-}
-.alulaText p{
-    text-align: center;
-    width: 45%;
-}
-#alula h1{
-    font-size: 30px;
-    font-weight: 200;
-    color: #dbcfacd0;
-}
-#alula p{
-    color: rgba(255, 255, 255, 0.849);
-    font-size: 18px;
-}
-/* ----Alula Next */
-#alulaNext{
-    padding: 0;
-    margin-top: 0px;
-    background: url(img/alulaN.webp) no-repeat center;
-    background-size: 100%;
-}
-#alulaNext .space{
-    height: 9vh;
-}
-#alulaNext .alulaText{
-    align-items:flex-start;
-    background-color: rgba(255, 255, 255, 0);
-    width: 34%;
-    border-radius: 15px;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.158);
-    padding: 10px 15px;
-    backdrop-filter: blur(5px);
-    /* padding-top: 2.5%; */
-    margin-left: 3%;
-}
-#alulaNext .alulaText h1{
-    text-align: left;
-    float: left;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 8px;
-    font-size: 40px !important;
-    font-weight: 400;
-}
-#alulaNext .alulaText p{
-    text-align: left;
-    margin-top: 10px;
-    color: rgb(240, 240, 240);
-    width: 100%;
-}
-#alulaNext h1{
-    font-size: 30px;
-    font-weight: 200;
-    color: #dbcfacd0;
-}
-#alulaNext p{
-    color: rgba(255, 255, 255, 0.849);
-    font-size: 20px;
-}
-#alulaNext strong{
-    font-weight: 500;
-}
-.emo{
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.158);
-    width: 40%;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0);
-    padding: 10px 15px;
-    text-align: right;
-    float: right;
-    margin-top: 15%;
-    margin-right: 20%;
-}
-.emo h1{
-    margin: 0;
-    padding-bottom: 0;
-    font-weight: 400 !important;
-    font-size: 37px !important;
-}
-.emo p{  
-    float: right;
-    width: 100%;
-}
-/* --------warranty */
-#warranty{
-    padding-top: 15%;
-    margin-right: 250px;
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0);
-}
-.row{
-    display: flex;
-    flex-direction: row;
-}
-.column{
-    display: flex;
-    flex-direction: column;
-}
-#warranty .row {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-items: auto;
-    align-items: center;
- }
-.card{
-    backdrop-filter: blur(5px);
-    width: 280px;
-    padding: 10px 12px;
-    height: 380px;
-    margin: 0 8px;
-    border-radius: 20px;
-    color: rgb(253, 241, 218);
-    background-color: unset;
-}
-.card:nth-child(1){
-    background-color: rgba(0, 0, 0, 0.274);
-    margin-left: 55px;
-}
-.card:nth-child(1) h2{
-    color: #d1be8d;
-}
-.card:nth-child(2){
-    background-color: rgba(255, 255, 255, 0.479);
-}
-.card:nth-child(2) {
-    color: black;
-}
-.card:nth-child(2) h2{
-    font-weight: 700 !important;
-}
-.card:nth-child(3) h2{
-    font-weight: 600 !important;
-
-    color: black;
-}
-.card:nth-child(3){
-    background-color: rgba(128, 128, 128, 0.514);
-}
-.card:nth-child(4){
-    background-color: #bfad7f6b;
-}
-.card .column:nth-child(2){
-    margin-left: 50px;
-    margin-top: -30px;
-}
-.card .row{
-    margin-top: 15px;
-}
-.fa-leaf{
-    color: #B0A078;
-}
-.fa-hands{
-    color: #ebe5d7;
-}
-#warranty i{
-    margin: 30px auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 60px;
-}
-
-#warranty h2{
-    font-weight: 500;
-    text-align: center;
-}
-#warranty p{
-    font-size: 16px;
-    text-align: center;
-    padding: 0 15px;
-}
-#warranty li{
-    padding: 3px 0;
-}
-/* --------Titanium */
-#titanium{
-    background: url(img/titanium.webp) no-repeat center;
-    background-size: 100%;
-}
-#titanium .space{
-    height: 9vh;
-}
-.titaniumOne{
-    /* background: rgba(0, 0, 0, 0.171); */
-    padding: 10px 15px;
-    border-radius: 16px;
-    width: 40%;
-    padding-top: 10px 15px;
-    margin-left: 2%;
-}
-.titaniumOne h1 {
-    text-shadow: 0 1px 2px black;
-    font-weight: 500;
-    color: rgb(230, 220, 201);
-    padding: 0 !important;
-    margin: 0;
-    font-size: 35px;
-}
-.titaniumOne p{
-    font-size: 18px;
-    color: rgb(236, 231, 221);
-    text-shadow: 0 1.5px 3px black;
-}
-/* -- */
-.titaniumTwo{
-    float: right;
-    padding: 10px 15px;
-    border-radius: 16px;
-    width: 35%;
-    margin-top: 23%;
-    margin-right: 17.5%;
-    text-align: right;
-}
-.titaniumTwo h1 {
-    text-shadow: 0 1px 2px black;
-    font-weight: 500;
-    color: rgb(230, 220, 201);
-    padding: 0 !important;
-    margin: 0;
-    font-size: 33px;
-}
-.titaniumTwo p{
-    font-size: 16px;
-    color: white;
-    text-shadow: 0 1.5px 3px black;
-}
-.buy{
-    font-weight: 500;
-    font-size: 23px;
-    padding: 10px 17px;
-    border: var(--gold) 2.5px solid;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.678);
-    color: rgb(243, 230, 205);
-    transition: 0.4s ease-in-out;
-}
-.buy:hover{
-    box-shadow: 0 0 2px rgb(255, 245, 227);
-    border-radius: 8px;
-    background: var(--gold);
-    color: black;
-    text-shadow: unset;
-    border: 2px solid var(--gold);
-}
-.titbuy{
-    margin-left: 3%;
-    margin-top: 415px;
-    margin-bottom: -420px;
-}
-/* --------------------------------reviews---- */
-.mySlides {
-    display: none;
-}
-.slideshow-container {
-  margin: auto;
-}
-#reviews{
-    height: 80vh !important;
-    background-color:#bdb193 ;
-}
-#reviews .row{
-    z-index: 1;
-    height: 80vh !important;
-}
-/* Caption text */
-.text {
-    z-index: 1;
-  margin-left: 3%;
-  background:#bdb193;
-  color: rgb(0, 0, 0);
-  height: auto;
-  font-size: 20px;
-  padding: 15px 25px;
-  text-align: left;
-}
-.text h3{
-    color: rgb(70, 70, 70);
-    font-size: 15px !important;
-    font-weight: 500 !important;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-}
-.text h3 a{
-    color: rgb(41, 41, 41);
-    border-bottom: 1px solid black ;
-}
-#reviews hr{
-    width: 40%;
-    color: black;
-    background: black;
-    border: 0.5px solid black;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-/* Next & previous buttons */
-.pnbtns{
-    height: 100%;
-    width: 100%;
-    margin-top: -25%;
-}
-.prev,.next {
-    background-color: rgba(0, 0, 0, 0.075);
-    height: 100%;
-    z-index: 2;
-    cursor: pointer;
-    width: auto;
-    padding: 25vh 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 25px 25px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    float: right;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.39);
-  }
-  
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: rgba(219, 219, 219, 0.192);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: var(--gold);
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-/* -------------------------------Details */
-#details{
-    background:  url(img/2.webp);
-    background-size: 100%;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.856);
-}
-#details .row{
-    width: 80%;
-    margin-left: 20%;
-}
-#details .column{
-    margin-right: 3%;
-    width: 33%;
-}
-#details h1{
-    font-size: 35px;
-    font-weight: 400;
-    margin-left: 5%;
-    margin-top: 0%;
-    color: wheat;
-    padding-top: 7%;
-}
-#details .row p{
-    color: var(--gold);
-    font-size: 18px;
-}
-#details .row li{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.808);
-}
-/* --------------------------------------------Contact */
-#contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    background: black;
-}
-#contact h1{
-    font-size: 35px;
-    font-weight: 500;
-    color: rgb(238, 229, 212);
-}
-#contact span{
-    color: wheat;
-    padding-left: 7px;
-    letter-spacing: 6px;
-    font-family: 'copplinn';
-}
-.mail{
-    color: rgba(231, 220, 198, 0.795);
-    font-size: 20px;
-}
-.social{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-}
-.social ul{
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
-.social li{
-    box-sizing: content-box;
-    padding: 10px 12px;
-    list-style: none;
-}
-
-.social a{
-    font-size: 23px;
-    color: rgba(255, 255, 255, 0.699);
-}
-.social a:hover{
-    color: var(--gold);
-    text-shadow: 0 0 2px var(--gold);
-}
-
-.ds{
-    margin-left: 2%;
-    margin-top: -6.5%;
-    float: left;
-    width: 2.5%;
-}
-@media only screen and (max-width:800px) {
-    /* ScrollBar_____________________________ */
- html {
-    --scrollbarBG: #00000000;
-    --thumbBG: rgba(219, 208, 173, 0);
-  }
-  body::-webkit-scrollbar {
-    width: 5px;
-  
-  }
-  body {
-    scrollbar-width:thick;
-    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  }
-  body::-webkit-scrollbar-track {
-    background: var(--scrollbarBG);
-  
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--thumbBG) ;
-    border-radius: 6px;
-    border: 1px solid var(--scrollbarBG);
-  }
-  /* ______________________________________________ */
-    .buynow {
-    display:none;
-  }
-    .nav{
-        z-index: 99;
-        background-color: rgba(0, 0, 0, 0.895);
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .nav h1{
-        width: 40%;
-        padding: 0px;
-        margin: 2% auto;
-        text-transform: uppercase;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        color: #beb08a;
-        font-family: 'copplinn';
-        letter-spacing: 5px;
-        font-weight: 100;
-    }
+    <div class="mySlides fade">
+        <div class="row">
+            <div class="text">
+                <p>Alula+, where the highs and mids do not disappear, but you can experience the bass deeply. We use it in our music school and recommend it to our students.</p>
+                <hr>
+                <h3>SDJ Music Academy</a> </h3>  
+            </div>
+            <img src="img/right.webp" loading="lazy" alt="">
+        </div>
+    </div>
+    <br>
     
-#main{
-    height: 80vh;
-    overflow: hidden;
-    background: url(img/main.webp) no-repeat;
-    background-size:200%;
-    background-position: center 3%;
-    background-attachment: fixed;
-}
-.buynow {
-    position: absolute;
-    left:unset;
-    top: 450px;
-    display: inline-flex;
-    height: 50px;
-    width: 150px;
-    border: 2px solid var(--gold);
-    margin: 20px 20px 20px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: .8em;
-    letter-spacing: 1.5px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  #butto a{
-    color: var(--gold);
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
 
-  }
+    </div>
+   <div class="pnbtns">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+</div> 
+    </section>
+    <section id="details">
+        <h1>Specification</h1>
+        <div class="row">
+            <div class="column">
+                <ul>
+                    <p>Body:</p>
+                    <li>Titanium Nozzle</li>
+                    <li>Heat process Sweet Cherry Wood housing</li>
+                </ul>
+                
+                <ul>
+                    <p>Driver:</p>
+                    <li>Full Range Liquid Silicone Dynamic Driver</li>
+                    <li>20 - 20000 Hz frequency range</li>
+                    <li>35ohm@1kHz </li>
+                    <li>109dB@1kHz </li>
+                    <li>126dB@50mVa max. output</li>
+                </ul>
+                
+                <ul>
+                    <p>Cable:</p>
+                    <li>%99.9 Pure Copper 4 channel cable </li>
+                    <li>2.5, 3.5, 4.4 mm connectors options</li>
+                    <li>Rechangeable mmcx</li>
+                    <li>Silver wiring and soldering interior mechanics</li>
+                    <li>All connectors and Y-split made with chrome plated</li>
+                </ul>
+            </div>
+            <!-- -- -->
+            <div class="column">
+                <ul>
+                    <p>Technology:</p>
+                    <li>Frequency Filtering System patenting by Copplinn</li>
+                    <li>3.5 and 13.5 kHz resonance blocking</li>
+                    <li>Custom sound design options</li>
+                    <li>Absorb harsh and redundant frequencies</li>
+                </ul>
+                
+                <ul>
+                    <p>Accessories:</p>
+                    <li>Copplinn Leather Case</li>
+                    <li>Leather Organizer</li>
+                    <li>S,M,L size eartips</li>
+                    <li>Solid Walnut Wooden Box</li>
+                    <li>Collar Clips</li>
+                </ul>
+                
+                
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1> Contact <span>COPPLINN</span></h1>
+        <a class="mail" href="mailto:copplinn.info@gmail.com">copplinn.info@gmail.com</a>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/Copplinn/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/copplinn" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCO622ATESk8YK-FSXzzFU1w?view_as=subscriber" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/copplinn/?hl=tr" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="mailto:copplinn.info@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+       
+        </div>
+    </section>
+    <img src="img/ds.png" alt="" class="ds">
 
-    .edit{
-        transition: 0.3s ease-in-out;
-        font-weight: 100;
-        color: rgba(253, 248, 239, 0.648);
-        padding: 10px 25px;
-        font-size: 18px;
-        position: absolute;
-        right: 0px;
-        top: 0;
-    }
-    .bottomMenu{
-        display: none;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .vidmain{
-        position: absolute;
-        top: 0;
-        margin: 30vh 2%;
-        padding: 0;
-        height: auto;
-        width: 100%;
-        display: block;
-        overflow: hidden !important;
-    }
-    source{
-    height: auto;
-    }
-    /* ----------alula */
-    #alula{
-        height: auto;
-        background: url(img/1.webp) no-repeat center;
-        background-size: 100%;
-        background-attachment: fixed;
-    }
-    .left{
-        width: 100%;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.809), rgba(0, 0, 0, 0.804)), url(img/left.webp) no-repeat center;
-        background-size: cover;
-        height: 72vh;
-    }
-    .right{
-        width: 100%;
-        background: linear-gradient(0deg, rgba(48, 44, 31, 0.808), rgba(51, 47, 35, 0.805)), url(img/right.webp) no-repeat center;
-        background-size: cover;
-        height: 72vh;
-    }
-    .alulaText{
-    padding-top: 5%;
-    margin-left: 5%;
-}
-.alulaText h1{
-    text-align: center;
-    letter-spacing: 8px;
-    font-size: 30px !important;
-}
-.alulaText p{  
-    width: 95%;
-}
-#alula h1{
-    font-size: 30px;
-    font-weight: 200;
-    color: #dbcfacd0;
-}
-#alula p{
-    text-align: center;
-    color: rgba(255, 255, 255, 0.849);
-    font-size: 16px;
-}
-#alula p:nth-child(2){
-    margin-bottom: 5%;
+<br><br><br><br>
+<script>
+ window.onload = function() {
+ document.getElementById('loading').style.display = 'none';
+ };
 
-}
-#alula .buy{
-    font-size: 20px;
-    text-align: center;
-    width: 40%;
-    /* margin-right: 35%; */
-    margin-left: 0%;
-}
+myID = document.getElementById("myID");
 
-.right{
-    transition: 0.5s ease-in-out;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(48, 44, 31, 0.608), rgba(51, 47, 35, 0.605)), url(img/right.webp) no-repeat center;
-    background-size: cover;
-    height: 95vh;
-}
-/* ----Alula Next */
-#alulaNext{
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.055);
-    height: 70vh;
-    padding: 50px 0px;
-    margin-top: 0px;
-    background: url(img/alulaN.webp) no-repeat center;
-    background-size: 300%;
-}
-#alulaNext .space{
-    height: 1vh;
-}
-#alulaNext .alulaText{
-    background-color: rgba(255, 255, 255, 0);
-    width: 88%;
-    border-radius: 15px;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.158);
-    padding: 10px 15px;
-    backdrop-filter: blur(3px);
-    margin-left: 2%;
-}
-#alulaNext .alulaText h1{
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 8px;
-    font-size: 27px !important;
-}
-#alulaNext .alulaText p{
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    width: 95%;
-}
-#alulaNext h1{
-    font-size: 27px;
-    font-weight: 200;
-    color: #dbcfacd0;
-}
-#alulaNext p{
-    color: rgba(255, 255, 255, 0.849);
-    font-size: 14px;
-}
-#alulaNext strong{
-    font-weight: 500;
-}
-.emo{
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.158);
-    width: 85%;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0);
-    padding: 10px 15px;
-    text-align: right;
-    float: right;
-    margin-top: 15%;
-    margin-right: 3%;
-}
-.emo h1{
-    margin: 0;
-    padding-bottom: 0;
-    font-weight: 300 !important;
-    font-size: 37px !important;
-}
-.emo p{  
-    font-size: 14px;
-    float: right;
-    width: 90%;
-}
-#tech{
-    height: 50vh;
-    background: url(img/3.webp) no-repeat center;
-    background-size: 195%;
-}
-#show{
-    height: 180vh;
-    background: url(img/2.webp) no-repeat center;
-    background-size: 350%;
-    background-attachment: fixed;
-}
-/* --------warranty */
-#warranty{
-    padding-top: 5%;
-    margin-right: 0px;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0);
-}
-#warranty .row {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-items: auto;
-    align-items: center;
- }
-.card{
-    backdrop-filter: blur(5px);
-    width: 220px;
-    padding: 10px 12px;
-    height: 380px;
-    display: block;
-    margin: 12px auto;
-    border-radius: 20px;
-    color: rgb(253, 241, 218);
-    background-color: #6c32116b;
-}
-.card:nth-child(1){
-    background-color: rgba(0, 0, 0, 0.274);
-    margin-left: auto;
-}
-.card:nth-child(1) h2{
-    color: #d1be8d;
-}
-.card:nth-child(2){
-    background-color: rgba(255, 255, 255, 0.479);
-}
-.card:nth-child(2) {
-    color: black;
-}
-.card:nth-child(2) h2{
-    font-weight: 700 !important;
-}
-.card:nth-child(3) h2{
-    font-weight: 600 !important;
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 1300) {
+        myID.className = "bottomMenu show"
+    } else {
+        myID.className = "bottomMenu hide"
+    }
+};
 
-    color: black;
-}
-.card:nth-child(3){
-    background-color: rgba(128, 128, 128, 0.514);
-}
-.card:nth-child(4){
-    background-color: #bfad7f6b;
-}
-.card .column:nth-child(2){
-    margin-left: 50px;
-    margin-top: -30px;
-}
-.card .row{
-    margin-top: 15px;
-}
-.fa-leaf{
-    color: #B0A078;
-}
-.fa-hands{
-    color: #ebe5d7;
-}
-#warranty i{
-    margin: 18px auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 60px;
-}
+window.addEventListener("scroll", myScrollFunc);
 
-#warranty h2{
-    font-size: 18px !important;
-    font-weight: 500;
-    text-align: center;
-}
-#warranty p{
-    font-size: 14px;
-    text-align: center;
-    padding: 0 15px;
-}
-#warranty li{
-    font-size: 12px !important;
-    padding: 3px 0;
-}
 
-/* --------Titanium */
-#titanium{
-    height: 90vh;
-    background: url(img/titanium.webp) no-repeat center;
-    background-size: 350%;
-}
-#titanium .space{
-    height: 1vh;
-}
-.titaniumOne{
-    /* background: rgba(0, 0, 0, 0.171); */
-    padding: 10px 15px;
-    border-radius: 16px;
-    width: 90%;
-    padding-top: 10px 15px;
-    margin-left: 0%;
-}
-.titaniumOne h1 {
-    text-shadow: 0 1px 2px black;
-    font-weight: 500;
-    color: rgb(230, 220, 201);
-    padding: 0 !important;
-    margin: 0;
-    font-size: 25px;
-}
-.titaniumOne p{
-    font-size: 16px;
-    color: rgb(236, 231, 221);
-    text-shadow: 0 1.5px 3px black;
-}
-/* -- */
-.titaniumTwo{
-    float: right;
-    padding: 10px 15px;
-    border-radius: 16px;
-    width: 90%;
-    margin-top: 23%;
-    margin-right: 0.5%;
-    text-align: right;
-}
-.titaniumTwo h1 {
-    text-shadow: 0 1px 2px black;
-    font-weight: 500;
-    color: rgb(230, 220, 201);
-    padding: 0 !important;
-    margin: 0;
-    font-size: 25px;
-}
-.titaniumTwo p{
-    font-size: 16px;
-    color: white;
-    text-shadow: 0 1.5px 3px black;
-}
-.buy{
-    font-weight: 500;
-    font-size: 23px;
-    padding: 10px 17px;
-    border: 2.5px solid;
-    color: var(--gold);
-    transition: 0.4s ease-in-out;
-}
-.buy:hover{
-    border-radius: 10px;
-    background: var(--gold);
-    color: #5a564a;
-    border: 2px solid var(--gold);
-}
-.titbuy{
-    margin-left: 3%;
-    margin-top: 415px;
-    margin-bottom: -420px;
-}
-/* --------------------------------reviews---- */
-.mySlides {
-    display: none;
-}
-.slideshow-container {
-  margin: auto;
-}
-#reviews{
-    height: 80vh !important;
-    background-color:#000000 ;
-}
-#reviews .row{
-    z-index: 1;
-    height: 60vh !important;
-}
-/* Caption text */
-.text {
-    z-index: 1;
-  margin-left: 0%;
-  background:#bdb193;
-  color: rgb(0, 0, 0);
-  height: auto;
-  font-size: 20px;
-  padding: 15px 25px;
-  text-align: left;
-}
-.text h3{
-    color: rgb(70, 70, 70);
-    font-size: 15px !important;
-    font-weight: 500 !important;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-}
-.text h3 a{
-    color: rgb(41, 41, 41);
-    border-bottom: 1px solid black ;
-}
-#reviews hr{
-    width: 40%;
-    color: black;
-    background: black;
-    border: 0.5px solid black;
-}
+var slideIndex = 1;
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-/* Next & previous buttons */
-.pnbtns{
-    height: 100%;
-    width: 100%;
-    margin-top: -5%;
-}
-.prev,.next {
-    background-color: rgba(0, 0, 0, 0.075);
-    height: 100%;
-    z-index: 2;
-    cursor: pointer;
-    width: auto;
-    padding: 25vh 16px;
-    margin-top: -20px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 25px 25px 0;
-    user-select: none;
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
   }
   
-  /* Position the "next button" to the right */
-  .next {
-    float: right;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.39);
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
   }
-  
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: rgba(219, 219, 219, 0);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-/* -------------------------------Details */
-#details{
-    height: 145vh;
-    background:  url(img/2.webp) no-repeat center;
-    background-size: 100%;
-    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.856);
-}
-#details .row{
-    width: 90%;
-    margin-left: 0%;
-}
-#details .column{
-    margin-right: 3%;
-    width: 94%;
-}
-#details h1{
-    font-size: 35px;
-    font-weight: 400;
-    margin-left: 5%;
-    margin-top: 0%;
-    color: wheat;
-    padding-top: 20%;
-}
-#details .row p{
-    color: var(--gold);
-    font-size: 15px;
-}
-#details .row li{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.808);
-}
-/* --------------------------------------------Contact */
-#contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    background: black;
-}
-#contact h1{
-    font-size: 30px;
-    font-weight: 500;
-    color: rgb(238, 229, 212);
-}
-#contact span{
-    color: wheat;
-    padding-left: 7px;
-    letter-spacing: 6px;
-    font-family: 'copplinn';
-}
-.mail{
-    color: rgba(231, 220, 198, 0.795);
-    font-size: 20px;
-}
-.social{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-}
-.social ul{
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
-.social li{
-    box-sizing: content-box;
-    padding: 10px 12px;
-    list-style: none;
 }
 
-.social a{
-    font-size: 23px;
-    color: rgba(255, 255, 255, 0.699);
-}
-.social a:hover{
-    color: var(--gold);
-    text-shadow: 0 0 2px var(--gold);
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
 }
 
-.ds{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -18%;
-    float:unset;
-    width: 7%;
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}
+  	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 15,
+    speed: 500,
     
-}
+
+	});
+
+
+  	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 15,
+    speed: 500,
+    
+
+	});
+
+</script>
+	<!--Start of Tawk.to Script-->
+<!-- <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60ba8c3f4ae6dd0abe7c8a0c/1f7cb7ma5';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script> -->
+<!--End of Tawk.to Script-->
+</body>
+</html>
