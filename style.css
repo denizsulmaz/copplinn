@@ -922,8 +922,8 @@ section:nth-child(6){
     position: fixed;
     top: 0;
     right: 0;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 38px;
     background: var(--gold) url("https://raw.githubusercontent.com/denizsulmaz/portfoliocdn/main/menu.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -963,7 +963,7 @@ section:nth-child(6){
 }
 .nav ul li a{
     transition: 0.2s ease-in-out;
-    font-size: 2.3em;
+    font-size: 1.8em;
     letter-spacing: 4px;
     color: var(--gold);
     text-transform: uppercase;
@@ -994,6 +994,8 @@ section:nth-child(6){
 
 }
 .menuToggle.active{
+    width: 46px;
+    height: 46px;
     background: #ff0011cc url( "https://raw.githubusercontent.com/denizsulmaz/portfoliocdn/main/close.png");
     transform:rotate(180deg);
     background-repeat: no-repeat;
@@ -1009,14 +1011,14 @@ section:nth-child(6){
     .topnav{
         z-index: 10;
         padding: 4px 0;
-        background-color: rgba(0, 0, 0, 0.836);
+        background-color: rgba(0, 0, 0, 0.938);
         position: fixed;
         top: 0;
     }
     .topnav h1{
-        width: 40%;
-        padding: 0px;
-        margin: 2% auto;
+        width: 25%;
+        padding: 1px 0;
+        margin: 2% 0;
         text-transform: uppercase;
         text-align: center;
         display: flex;
@@ -1026,19 +1028,20 @@ section:nth-child(6){
         letter-spacing: 5px;
         font-weight: 100;
     }
-    
 #main{
     height: 80vh;
     overflow: hidden;
     background: url(img/main.webp) no-repeat;
     background-size:200%;
     background-position: center 3%;
-    /* background-attachment: fixed; */
+    background-attachment:unset;
 }
+#main .buynow {
+    bottom: 150px !important;
+  }
 .buynow {
     position: absolute;
     left:unset;
-    top: 450px;
     display: inline-flex;
     height: 50px;
     width: 150px;
@@ -1086,18 +1089,27 @@ section:nth-child(6){
     /* ----------alula */
     #alula{
         height: auto;
-        background: url(img/1.webp) no-repeat center;
+        background: no-repeat center;
         background-size: 100%;
-        background-attachment: fixed;
+        background-attachment: unset;
     }
     .left{
-        width: 100%;
+        margin: 2px ;
+        margin-bottom: 3% !important;
+        width: 98%;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.809), rgba(0, 0, 0, 0.804)), url(img/left.webp) no-repeat center;
         background-size: cover;
         height: 72vh;
     }
+    .left:hover{
+        background-size: 250%;
+    }
+    .right:hover{
+        background-size: 340%;
+    }
     .right{
-        width: 100%;
+        margin: 2px ;
+        width: 98% !important;
         background: linear-gradient(0deg, rgba(48, 44, 31, 0.808), rgba(51, 47, 35, 0.805)), url(img/right.webp) no-repeat center;
         background-size: cover;
         height: 72vh;
@@ -1212,15 +1224,15 @@ section:nth-child(6){
     width: 90%;
 }
 #tech{
-    height: 50vh;
-    background: url(img/3.webp) no-repeat center;
-    background-size: 195%;
+    height: 33vh;
+    background: url(img/tech.webp) no-repeat center;
+    background-size: 105%;
 }
 #show{
-    height: 180vh;
-    background: url(img/2.webp) no-repeat center;
-    background-size: 310%;
-    background-attachment: fixed;
+    height: 200vh;
+    background: url(img/res2.webp) no-repeat center;
+    background-size: 250%;
+    background-attachment: unset;
 }
 /* --------warranty */
 #warranty{
@@ -1310,9 +1322,11 @@ section:nth-child(6){
 
 /* --------Titanium */
 #titanium{
+    overflow: hidden;
     height: 90vh;
     background: url(img/titanium.webp) no-repeat center;
     background-size: 350%;
+    background-attachment: unset;
 }
 #titanium .space{
     height: 1vh;
@@ -1323,30 +1337,35 @@ section:nth-child(6){
     border-radius: 16px;
     width: 90%;
     padding-top: 10px 15px;
-    margin-left: 0%;
+    margin-top: 3%;
+    float: none;
 }
 .titaniumOne h1 {
+    text-align: left;
     text-shadow: 0 1px 2px black;
     font-weight: 500;
     color: rgb(230, 220, 201);
     padding: 0 !important;
     margin: 0;
-    font-size: 25px;
+    font-size: 23px;
 }
 .titaniumOne p{
-    font-size: 16px;
+    text-align: left;
+    font-size: 15px;
     color: rgb(236, 231, 221);
     text-shadow: 0 1.5px 3px black;
 }
 /* -- */
 .titaniumTwo{
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(0, 0, 0, 0.123) !important;
     float: right;
-    padding: 10px 15px;
+    padding: 10px 10px !important;
     border-radius: 16px;
-    width: 90%;
-    margin-top: 35%;
-    margin-right: 0.5%;
+    width: 90% !important;
+    text-align: right !important;
+    margin-top: 32% !important;
+    margin-right: 7% !important;
+    position: relative !important;
     text-align: right;
 }
 .titaniumTwo h1 {
@@ -1355,10 +1374,11 @@ section:nth-child(6){
     color: rgb(230, 220, 201);
     padding: 0 !important;
     margin: 0;
-    font-size: 25px;
+    font-size: 23px;
 }
 .titaniumTwo p{
-    font-size: 16px;
+    width: 102%;
+    font-size: 15px;
     color: white;
     text-shadow: 0 1.5px 3px black;
 }
@@ -1376,10 +1396,11 @@ section:nth-child(6){
     color: #5a564a;
     border: 2px solid var(--gold);
 }
-.titbuy{
-    margin-left: 3%;
-    margin-top: 415px;
-    margin-bottom: -420px;
+#titanium .buy{
+    overflow: hidden;
+    position: absolute;
+    right: 33%;
+    margin-top: 47%;
 }
 /* --------------------------------reviews---- */
 .mySlides {
@@ -1389,12 +1410,45 @@ section:nth-child(6){
   margin: auto;
 }
 #reviews{
-    height: 80vh !important;
+    margin-top: 15% !important;
+    height: 78vh !important;
     background-color:#000000 ;
 }
 #reviews .row{
+    flex-direction: column-reverse;
     z-index: 1;
-    height: 60vh !important;
+    height: 78vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reviews img{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-left: 3% !important;
+    margin: 1% auto;
+    border-radius: 20px;
+}
+/* Caption text */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px ;
+  z-index: 1;
+  margin-left: 4% !important;
+  margin: 1% 1%;
+  background:#bdb193;
+  color: rgb(0, 0, 0);
+  height: auto;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-align: left;
+}
+.text p{
+    font-size: 15px !important;
 }
 /* Caption text */
 .text {
@@ -1403,9 +1457,11 @@ section:nth-child(6){
   background:#bdb193;
   color: rgb(0, 0, 0);
   height: auto;
-  font-size: 20px;
   padding: 15px 25px;
   text-align: left;
+}
+.long{
+    font-size: 12px !important;
 }
 .text h3{
     color: rgb(70, 70, 70);
@@ -1439,20 +1495,19 @@ section:nth-child(6){
 .pnbtns{
     height: 100%;
     width: 100%;
-    margin-top: -5%;
+    margin-top: -10%;
 }
-.prev,.next {
+.prev {
     background-color: rgba(0, 0, 0, 0.075);
     height: 100%;
     z-index: 2;
     cursor: pointer;
     width: auto;
-    padding: 25vh 16px;
-    margin-top: -20px;
+    padding: 5vh 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
+    font-size: 35px;
+    transition: 0.3s ease;
     border-radius: 0 25px 25px 0;
     user-select: none;
   }
@@ -1484,8 +1539,8 @@ section:nth-child(6){
 /* -------------------------------Details */
 #details{
     height: 145vh;
-    background:  url(img/2.webp) no-repeat center;
-    background-size: 100%;
+    background:  url(img/res2.webp) no-repeat center;
+    background-size: 130%;
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.856);
 }
 #details .row{
@@ -1569,7 +1624,7 @@ section:nth-child(6){
     margin-right: auto;
     margin-top: -18%;
     float:unset;
-    width: 7%;
+    width: 5%;
 }
     
 }
