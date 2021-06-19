@@ -57,12 +57,6 @@ body{
     height:100vh;
     width: 100%;
     background:rgb(0, 0, 0);
-    animation: fade 3.5s ease-out;
-}
-@keyframes fade {
-      from{display: inline-block;}
-    to{display: none !important;
-    }
 }
   .loading .logo{
     width: 12%;
