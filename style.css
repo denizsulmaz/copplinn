@@ -28,6 +28,29 @@
     border: 1px solid var(--scrollbarBG);
   }
   /* ______________________________________________ */
+  /* ScrollBar_____________________________ */
+ .warpper * {
+    --scrollbarBG: #00000000;
+    --thumbBG: rgba(155, 148, 124, 0.816);
+  }
+  *.warpper *::-webkit-scrollbar {
+    width: 5px;
+  
+  }
+  .warpper * {
+    scrollbar-width:thick;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  .warpper *::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  
+  }
+  .warpper *::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 1px solid var(--scrollbarBG);
+  }
+  /* ______________________________________________ */
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -46,7 +69,9 @@ body{
     font-family: copplinn;
     src: url(img/copplinn.otf);
 }
-
+.mini{
+    display: none;
+}
 /* ---------------------Loading */
 .loading{
     display:inline-block;
@@ -271,7 +296,7 @@ section:nth-child(6){
 }
 .nav *{box-sizing: border-box;}
 .nav.active{
-    left: 1150px;
+    left: 1100px;
 }
 .nav ul{
     margin-bottom: -3%;
@@ -396,9 +421,10 @@ section:nth-child(6){
 #alulaNext{
     padding: 0;
     margin-top: 0px;
-    background: url(img/alulaN.webp) no-repeat center;
+    background: url(img/right.webp) no-repeat center;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size:100%;
+    background-position: center 3%;
 }
 #alulaNext .space{
     height: 9vh;
@@ -885,7 +911,149 @@ section:nth-child(6){
     float: right;
     width: 2.5%;
 }
+.cookie{
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 96vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 4vh;
+    /* position: relative; */
+    background: var(--gold);
+    color: black;
+}
+.cookie strong{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+html:not([data-scroll='0']) .cookie {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 4vh;
+    position: relative;
+    background: var(--gold);
+    color: black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe00;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--gold);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.wrapper h2{
+    color:#000;
+    text-align:center;
+    font-size:2em;
+  }
+  .warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .warpper .modalText{
+      height: 65vh;
+      overflow-y: scroll;
+  }
+  .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background:#d4c9abb9;
+    display:inline-block;
+    color:#fff;
+    border-radius:8px 8px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  .panels{
+    background: #d4c9ab;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    margin: 0 auto;
+    /* max-width:1000px; */
+    border-radius:15px;
+    overflow:hidden;
+    padding:30px;  
+  }
+  .panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+  }
+  .radio{
+    display:none;
+  }
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel{
+    display:block
+  }
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab{
+    background:#d4c9ab;
+    color:rgb(0, 0, 0);
+  }
+
+
 @media only screen and (max-width:800px) {
+    *{
+        background-attachment: unset !important;
+    }
     /* ScrollBar_____________________________ */
  html {
     --scrollbarBG: #00000000;
@@ -909,6 +1077,73 @@ section:nth-child(6){
     border: 1px solid var(--scrollbarBG);
   }
   /* ______________________________________________ */
+  .cookie{
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 94vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 6vh;
+    /* position: relative; */
+    background: rgb(219, 208, 173);
+    color: black;
+}
+
+html:not([data-scroll='0']) .cookie {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 6vh;
+    position: relative;
+    background: var(--gold);
+    color: black;
+}
+.cookie address{
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 55px;
+}
+.tab{
+    font-size: 10px;
+    cursor: pointer;
+    padding:10px 3px;
+    margin:0px 0px;
+    background:#d4c9abb9;
+    display:inline-block;
+    color:#fff;
+    border-radius:8px 8px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  .tab:nth-child(1){
+      margin-left: 11px;
+  }
+  .modal-content {
+    background-color: #fefefe00;
+    /* margin: auto auto; */
+    margin-right: 8%;
+    /* padding: 0px 5px; */
+    box-sizing: border-box;
+    width: 90%;
+  }
+  .panels{
+    background: #d4c9ab;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    margin: 0 auto;
+    /* max-width:1000px; */
+    border-radius:15px;
+    overflow:hidden;
+    padding:15px;  
+  }
   /* ---SideBar */
   
 .menuToggle{
@@ -943,7 +1178,7 @@ section:nth-child(6){
 }
 .nav *{box-sizing: border-box;}
 .nav.active{
-    left: 80px;
+    left: 40px;
 }
 .nav ul{
     text-align: center;
@@ -999,9 +1234,7 @@ section:nth-child(6){
     cursor: pointer;
 }
 /* ---SideBarF */
-    .buynow {
-    display:none;
-  }
+    /*  */
     .topnav{
         z-index: 10;
         padding: 4px 0;
@@ -1030,16 +1263,15 @@ section:nth-child(6){
     background-position: center 3%;
     background-attachment:unset;
 }
+
 #main .buynow {
-    bottom: 150px !important;
-  }
-.buynow {
-    position: absolute;
-    left:unset;
+    position:static;
+    margin-top: 65vh !important;
     display: inline-flex;
     height: 50px;
     width: 150px;
     border: 2px solid var(--gold);
+    margin-left: 52% !important;
     margin: 20px 20px 20px 20px;
     text-transform: uppercase;
     text-decoration: none;
@@ -1102,11 +1334,11 @@ section:nth-child(6){
         background-size: 340%;
     }
     .right{
-        margin: 2px ;
+        margin: 10px 2px ;
         width: 98% !important;
         background: linear-gradient(0deg, rgba(48, 44, 31, 0.808), rgba(51, 47, 35, 0.805)), url(img/right.webp) no-repeat center;
         background-size: cover;
-        height: 72vh;
+        height: 75vh !important;
     }
     .alulaText{
     padding-top: 5%;
@@ -1155,7 +1387,7 @@ section:nth-child(6){
     height: 70vh;
     padding: 50px 0px;
     margin-top: 0px;
-    background: url(img/alulaN.webp) no-repeat center;
+    background: url(img/right.webp) no-repeat center;
     background-size: 300%;
 }
 #alulaNext .space{
@@ -1616,9 +1848,45 @@ section:nth-child(6){
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -18%;
+    margin-top: -12%;
+    padding-bottom: 20px;
     float:unset;
     width: 5%;
 }
     
+}
+@media only screen and (max-width:325px) {
+    body{
+        height: 100vh !important;
+        overflow: hidden;
+    }
+    .mini{
+        display: inline-block;
+        position: fixed;
+        top: 0; left: 0;
+        height: 100vh;
+        background: black;
+        z-index: 999;
+        overflow: hidden;
+    }
+    .mini img{
+        margin-top: 10%;
+        margin-left: 30%;
+        width: 40%;
+    }
+    .miniBuy .buy{
+        font-size: 15px;
+        border: 1.5px solid;
+    }
+    .miniBuy{
+        margin-top: 40%;
+        margin-left: 32%;
+    }
+    .mini p{
+        margin-top: 50%;
+        text-align: center;
+        font-size: 16px;
+        color: rgb(231, 221, 201);
+        text-transform: capitalize;
+    }
 }
