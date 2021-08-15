@@ -1560,9 +1560,9 @@ html:not([data-scroll='0']) .cookie {
 .card:nth-child(4){
     background-color: #bfad7f6b;
 }
-.card .column:nth-child(2){
-    margin-left: 50px;
-    margin-top: -30px;
+.card .column:nth-child(2) {
+    margin-left: 90px;
+    margin-top: -65px;
 }
 .card .row{
     margin-top: 15px;
