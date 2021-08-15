@@ -1639,6 +1639,7 @@ html:not([data-scroll='0']) .cookie {
     border-radius: 16px;
     width: 90% !important;
     text-align: right !important;
+    margin-top: 10% !important;
     margin-right: 7% !important;
     position: relative !important;
     text-align: right;
