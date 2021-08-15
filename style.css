@@ -1309,7 +1309,7 @@ html:not([data-scroll='0']) .cookie {
     height: 80vh;
     overflow: hidden;
     background: url(img/main.webp) no-repeat;
-    background-size:200%;
+    background-size:300%;
     background-position: center 3%;
     background-attachment:unset;
 }
