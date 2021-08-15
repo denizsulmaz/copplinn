@@ -1420,7 +1420,7 @@ html:not([data-scroll='0']) .cookie {
     font-size: 20px;
     text-align: center;
     width: 40%;
-    /* margin-right: 35%; */
+    margin-top: -11%;
     margin-left: 0%;
 }
 
