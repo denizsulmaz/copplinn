@@ -411,6 +411,9 @@ section:nth-child(6){
     height: 95vh;
     margin: 20px;
 }
+.left p {
+    line-height:200%;
+}
 .left:hover{
     background-size: 190%;
 }
