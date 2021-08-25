@@ -1334,6 +1334,7 @@ html:not([data-scroll='0']) .cookie {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    display: none;
   }
   #butto:hover a{
     color: black;
