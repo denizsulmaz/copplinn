@@ -412,7 +412,7 @@ section:nth-child(6){
     margin: 20px;
 }
 .left p {
-    line-height:200%;
+    line-height: 137%;
 }
 .left:hover{
     background-size: 190%;
@@ -1318,7 +1318,8 @@ html:not([data-scroll='0']) .cookie {
 }
 
 #main .buynow {
-    position:static;
+    position: inherit;
+    bottom: 150px;
     margin-top: 65vh !important;
     display: inline-flex;
     height: 50px;
@@ -1334,11 +1335,16 @@ html:not([data-scroll='0']) .cookie {
     justify-content: center;
     overflow: hidden;
   }
-  #butto a{
-    color: var(--gold);
+  #butto:hover a{
+    color: black;
 
   }
-
+  #dub-arrow {
+    display: none;
+  }
+  #butto:hover a {
+    left: 0px;
+  }
     .edit{
         transition: 0.3s ease-in-out;
         font-weight: 100;
@@ -1423,7 +1429,6 @@ html:not([data-scroll='0']) .cookie {
     font-size: 20px;
     text-align: center;
     width: 40%;
-    margin-top: -11%;
     margin-left: 0%;
 }
 
