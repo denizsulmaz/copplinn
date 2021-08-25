@@ -1911,7 +1911,6 @@ html:not([data-scroll='0']) .cookie {
     margin-bottom: -23vh;
     padding-bottom: 3vh;
     float: unset;
-        padding-left: 40px;
     width: 6%;
 }
     
