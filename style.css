@@ -235,7 +235,7 @@ height: 100vh;
 } */
 
 #tech{
-    background: url(img/tech.webp) no-repeat center;
+    background: url(img/three.webp) no-repeat center;
     background-size: 100%;
 }
 .techCover{
@@ -406,7 +406,7 @@ section:nth-child(6){
     border-radius: 20px;
     transition: background-size 3s ease-in-out linear;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.604)),  url(img/left.webp) no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.604)),  url(img/nozzle.webp) no-repeat center;
     background-size: cover;
     height: 95vh;
     margin: 20px;
@@ -424,7 +424,7 @@ section:nth-child(6){
     margin: 20px;
     transition: 0.5s ease-in-out;
     width: 100%;
-    background: linear-gradient(0deg, rgba(48, 44, 31, 0.608), rgba(51, 47, 35, 0.605)), url(img/right.webp) no-repeat center;
+    background: linear-gradient(0deg, rgba(48, 44, 31, 0.608), rgba(51, 47, 35, 0.605)), url(img/plus.webp) no-repeat center;
     background-size: cover;
     height: 95vh;
 }
@@ -460,7 +460,7 @@ section:nth-child(6){
 #alulaNext{
     padding: 0;
     margin-top: 0px;
-    background: url(img/right.webp) no-repeat center;
+    background: url(img/relic.webp) no-repeat center;
     background-attachment: fixed;
     background-size:100%;
     background-position: center 3%;
@@ -626,7 +626,7 @@ section:nth-child(6){
 }
 /* --------Titanium */
 #titanium{
-    background: url(img/titanium.webp) no-repeat center;
+    background: url(img/nozzle.webp) no-repeat center;
     background-size: 100%;
 }
 #titanium .space{
@@ -639,7 +639,7 @@ section:nth-child(6){
     padding: 10px 0px;
     float: right;
     border-radius: 16px;
-    width: 35%;
+    width: 38%;
     margin-top: -2%;
     margin-right: 2.5%;
     text-align: right;
@@ -653,6 +653,7 @@ section:nth-child(6){
     font-size: 35px;
 }
 .titaniumOne p{
+    padding-right: 12px;
     font-size: 16px;
     color: rgb(236, 231, 221);
     text-shadow: 0 1.5px 3px black;
@@ -667,7 +668,7 @@ section:nth-child(6){
     padding: 10px 15px;
     border-radius: 16px;
     width: 35%;
-    margin-top: 10%;
+    margin-top: -4%;
     margin-right: 2.5%;
     text-align: left;
 }
@@ -687,7 +688,7 @@ section:nth-child(6){
 #titanium .buy{
     animation: blink 2s ease-in-out infinite;
     position: absolute;
-    right: 150px;
+    right: 100px;
     box-shadow: 0 0 2px wheat;
 }
 @keyframes blink {
@@ -1382,7 +1383,7 @@ html:not([data-scroll='0']) .cookie {
         margin: 2px ;
         margin-bottom: 3% !important;
         width: 98%;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.809), rgba(0, 0, 0, 0.804)), url(img/left.webp) no-repeat center;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.809), rgba(0, 0, 0, 0.804)), url(img/nozzle.webp) no-repeat center;
         background-size: cover;
         height: 72vh;
     }
@@ -1435,7 +1436,7 @@ html:not([data-scroll='0']) .cookie {
 .right{
     transition: 0.5s ease-in-out;
     width: 100%;
-    background: linear-gradient(0deg, rgba(48, 44, 31, 0.608), rgba(51, 47, 35, 0.605)), url(img/right.webp) no-repeat center;
+    background: linear-gradient(0deg, rgba(48, 44, 31, 0.608), rgba(51, 47, 35, 0.605)), url(img/plus.webp) no-repeat center;
     background-size: cover;
     height: 95vh;
 }
@@ -1445,19 +1446,19 @@ html:not([data-scroll='0']) .cookie {
     height: 70vh;
     padding: 50px 0px;
     margin-top: 0px;
-    background: url(img/right.webp) no-repeat center;
+    background: url(img/relic.webp) no-repeat center;
     background-size: 300%;
 }
 #alulaNext .space{
     height: 1vh;
 }
 #alulaNext .alulaText{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.288);
     width: 88%;
     border-radius: 15px;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.158);
     padding: 10px 15px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(8px);
     margin-left: 2%;
 }
 #alulaNext .alulaText h1{
@@ -1509,7 +1510,7 @@ html:not([data-scroll='0']) .cookie {
 }
 #tech{
     height: 33vh;
-    background: url(img/tech.webp) no-repeat center;
+    background: url(img/three.webp) no-repeat center;
     background-size: 105%;
 }
 #show{
@@ -1608,7 +1609,7 @@ html:not([data-scroll='0']) .cookie {
 #titanium{
     overflow: hidden;
     height: 90vh;
-    background: url(img/titanium.webp) no-repeat center;
+    background: url(img/nozzle.webp) no-repeat center;
     background-size: 350%;
     background-attachment: unset;
 }
@@ -1911,6 +1912,7 @@ html:not([data-scroll='0']) .cookie {
     margin-bottom: -23vh;
     padding-bottom: 3vh;
     float: unset;
+        padding-left: 40px;
     width: 6%;
 }
     
