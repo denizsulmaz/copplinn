@@ -733,6 +733,7 @@ section:nth-child(6){
 }
 /* --------Titanium */
 #titanium{
+    position: relative;
     background: url(img/frequency.jpg) no-repeat center;
     background-size: 100%;
 }
@@ -746,9 +747,10 @@ section:nth-child(6){
     padding: 10px 0px;
     float: left;
     border-radius: 16px;
-    width: 38%;
-    margin-top: 1%;
-    margin-left: 2.5%;
+    width: 43%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     text-align: left;
 }
 .titaniumOne h1 {
@@ -773,8 +775,9 @@ section:nth-child(6){
     padding: 10px 15px;
     border-radius: 16px;
     width: 35%;
-    margin-top: -3%;
-    margin-left: 60%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     text-align: right;
 }
 .titaniumTwo h1 {
@@ -823,6 +826,18 @@ section:nth-child(6){
     width: 25%;
     margin-top: 38%;   
      
+}
+#titanium .titaniumThree{
+    position: absolute;
+    bottom: 10px;
+    left: 7%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.418);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 2px 12px;
+    border-radius: 16px;
+    width: 86%;
+    text-align: center;
 }
 /* --------------------------------reviews---- */
 .mySlides {
