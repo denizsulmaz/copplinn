@@ -63,8 +63,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <script src="js/vanilla-tilt.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/copplinnIco.ico" type="image/x-icon">
     <title>Copplinn | Sound & Engineered</title>
 </head>
@@ -87,12 +88,11 @@
 
         <div id="sidebarMenu" class="nav" onclick="toggleMenu();">
             <ul class="sidebarMenuInner">
-                <li><a href="#alula">Alula</a></li>
-                <li><a href="#tech">Technology</a></li>
-                <li><a href="#warranty">Warranty</a></li>
+                <li><a href="#woods">Woods</a></li>
+                <li><a href="#ffc">Technology</a></li>
                 <li><a href="#titanium">Titanium</a></li>
                 <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#details">Details</a></li>
+                <li><a href="#warranty">Warranty</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://www.etsy.com/shop/CopplinnSound"><i class="far fa-shopping-bag"></i></a></li>
             </ul>
@@ -101,191 +101,242 @@
     
 
     <section id="main">
-        <!-- <div class="buynow" id="butto">
-           <div id="dub-arrow" onclick="window.open('https://www.etsy.com/listing/926345296/copplinn-alula-cheery')"  style="cursor: pointer;"><i class="far fa-shopping-bag"></i></div>
-            <a href="https://www.etsy.com/listing/926345296/copplinn-alula-cheery" target="_blank" rel="noopener noreferrer" >Buy Now</a>
-          </div> -->
-
-        <!-- <video class="vidmain" loop autoplay muted>
-            <source src="https://.mp4" type="video/mp4">
-        </video> -->
+        <div id="image-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- <li class="splide__slide">
+                <video src="img/vid.mp4" autoplay muted loop></video>
+              </li> -->
+              <li class="splide__slide">
+                <img src="img/Accessories.webp">
+              </li>
+              <li class="splide__slide">
+                <img src="img/slide2.webp">
+              </li>
+              <li class="splide__slide">
+                <img src="img/slide3.webp">
+              </li>
+              <li class="splide__slide">
+                <img src="img/slide4.webp">
+              </li>
+              <li class="splide__slide">
+                <img src="img/slide5.webp">
+              </li>
+            </ul>
+          </div>
+        </div>
     </section>
 
-    <section id="alula">
+    <h1 class="woodPore" id="woods">Wood Pore Acoustic</h1>
+    <p class="woodPoreP">We examined the pore structure of the trees by magnifying then 10 times under the microscope. <br>The pore structures and the sound are parallel despite the same technical features.</p>
+    <section class="showCards">
+      <div class="row">
+        <div class="hCard">
+          <img src="/img/Peruvian Walnut.webp" alt="">
+          <div class="hCardText">
+            <h1>Peruvian Walnut</h1>
+            <p>The medium size and irregular pores of the Bastogne Walnut Wood highlight the: <br>
+              • Strong drum presentation <br>
+              • Bass guitar and cello texture <br>
+              </p>
+          </div>
+        </div>
+        <!-- ------- -->
+        <div class="hCard">
+          <img src="/img/English Black Cherry.webp" alt="">
+          <div class="hCardText">
+            <h1>English Black Cherry</h1>
+            <p>The small and regular pores of the Black Cherry Wood highlight the: <br>
+              • Clear vocal <br>
+              • Guitar texture <br>
+              • Deep Bass <br>
+               
+            </p>
+          </div>
+        </div>
+        <!-- ------- -->
+        <div class="hCard">
+          <img src="/img/Santos Mahogany.webp" alt="">
+          <div class="hCardText">
+            <h1>Santos Mahogany</h1>
+            <p>The large and irregular pores of the Santos Mahogany Wood highlight the: <br>
+              • Lean bass <br>
+              • Wide soundstage <br>
+              • Fun sound signature with air <br>
+              
+             </p>
+          </div>
+        </div>
+        <!-- ------- -->
+        <div class="hCard">
+          <img src="/img/Aegean Olive.webp" alt="">
+          <div class="hCardText">
+            <h1>Aegean Olive</h1>
+            <p>The small size and irregular pores of the Aegean Olive Wood highlight the: <br>
+              • Wind instruments texture and keyboard <br>
+              • Detailed bass presentation<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="imgLine" id="ffc">
+      <h2>Frequency Filtering System</h2>
+      <p>The hearing curves show a significant a peak sensitivity around 3500 -4000 Hz. There is another enhanced sensitivity region at about 13,500 Hz which may be associated with the third harmonic resonance of the auditory canal. The Frequency Filtering System block these resonance frequencies. Delivers clear and comprehensive vocal performance.</p>
+    </section>
+    <section class="duoTab">
+      <div class="duoTabBar">
+        <button class="tablinks" onclick="openProduct(event, 'Alula')" id="defOpen">Alula&nbsp;</button>
+        <button class="tablinks" onclick="openProduct(event, 'Alula+')">Alula +</button>
+      </div>
+
+      <div id="Alula" class="duoTabcontent">
         <div class="row">
-    <div class="left">
-        <div   class="alulaText">
-        <h1>ALULA</h1>
-        <p> <strong>Liquid Silicone Driver</strong>  <br> </p> 
-       
-        <p>The liquid silicone diaphragm is 3 times thinner than the diaphragms of other drivers. For this reason, instantaneous 
-            response timing is very good. Total harmonic distortion is less than <0.1%. <br> <br>
-                Recommended for fun sound lovers, daily users and beginner music producer.  </p>
-            <br>
-        <a href="https://www.etsy.com/listing/926345296/copplinn-alula-cheery" target="_blank" rel="noopener noreferrer" class="buy">Buy Now</a>
-    </div>
-    </div>
-     <!-- ------ -->
-    <div class="right">
-        <div   class="alulaText">
-            <h1>ALULA+</h1>
-            <p> <strong>2-Way Driver</strong> <br></p>
-            <p> Electro-magnetic woofer and Electro-magnetic tweeter. <br> <br>
-                Frequency Range: 20-40000 Hz <br><br>
-                This technology provide the rich sound. The all bass and treble are come to your ears different channels.
-                
-                Recommended for audiophiles or music production professionals.</p>
-                <br><br><br>
-            
-            <a href="https://www.etsy.com/listing/782404435/copplinn-alula" target="_blank" rel="noopener noreferrer" class="buy">Buy Now</a>
+          <div class="right">
+            <img src="/img/nozzle.webp" alt="">
+          </div>
+          <!-- -- -->
+          <div class="left">
+        <h3>Alula</h3>
+        <p>Driver: Full Range Liquid Silicone Dynamic Driver
+         <li>20-20000 Hz Frequency Range</li>
+         <li>35 ohm@1kHz Impedance</li>
+         <li><%0.1@1kHz THD </li>
+        <br>
+        Isolation: -25 dB <br>
+        Cable: %99.9 pure copper with mmcx and vibration stabilizer <br>
+        Connector: 2.5mm, 3.5mm, 4.4mm options <br>
+        </p>
+        <a href="https://www.etsy.com/shop/CopplinnSound" target="_blank" rel="noopener noreferrer">Buy Now</a>
+          </div>
+          <!-- ----- -->
+          
         </div>
-    </div>
-        <!-- ------ -->
-    </div>
-    <section id="spec">
-        <div class="specContain">
-            <div class="row">
-                <div class="alulaContainL">
-                    <div class="inBox">
-                    <h1 id="typex" >Alula</h1>
-                    <h1>BODY</h1>
-                    <p>Titanium Nozzle | Heat Press Black Cherry |  Wood Housing</p>
-                    <br>
-                    <h1>DRIVER</h1>
-                    <p>Full Range Liquid Slicone Driver <br>
-                    <ul>
-                        <li>20-20000 hz frequency range</li>
-                        <li>35 ohm @ 1 kHz</li>
-                        <li>109db @ 1kHz sensitivity</li>
-                        <li>126db @ 50mVa mas output</li>
-                        <li>%0.1 < THD @ 1 kHz</li>
-                    </ul></p>
-                    <br>
-                    <h1>TECHNOLOGY</h1>
-                    <p>Wood Pare Acoustic<br>
-                    13.5 kHz resonance blocking<br>
-                    Absorb harsh and redundant frequencies<br>
-                    <br>
-                    </p>
-                    <br>
-                    <h1>CABLE</h1>
-                    <p>%99.9 Pure Copper with mmcx <br> Connectors; 2.5mm, 3.5mm, 4,4mm</p>
-                    <br>
-                    <h1>Accessories</h1>
-                    <p>Copplinn Leather Case <br>
-                        Leather Cable Organizer <br>
-                        S, M, L  Size Eartips <br>
-                        Solid Walnut Wooden Box <br>
-                        <br>
-                        </p>
-                    <br>
-                    <h1>Warranty</h1>
-                    <p>1 Year Warranty Include Cable <br></p>
-                    <br>    
-                    <h1>Personalized</h1>
-                    <p>Yes. <br>Color (walnut and olive) <br> Cable (silver)
-                        </p>
-                    <br>
-                    </div>               
-                </div>
-                <!-- ------------------ -->
-                <div class="alulaContainR">
-                    <div class="inBox">
-                        <h1 class="type">Alula+</h1>
-                        <h1>BODY</h1>
-                        <p>Titanium Nozzle | Heat Press Exotic Santos Mahogany |  Wood Housing</p>
-                        <br>
-                        <h1>DRIVER</h1>
-                        <p>2-Way Electro Magneto System<br>
-                        <ul>
-                            <li>20-40000 hz frequency range</li>
-                            <li>16 ohm @ 1 kHz</li>
-                            <li>102db @ 1kHz sensitivity</li>
-                            <li>%0.1 < THD @ 1 kHz</li><br><br>
-                        </ul></p>
-                        <br>
-                        <h1>TECHNOLOGY</h1>
-                        <p>FFS (Frequency Filtering System) <br> 
-                            Wood Pare Acoustic <br>
-                            3.5 and 13.5 kHz resonance blocking <br>
-                            Absorb harsh and redundant frequencies <br>                    
-                        </p>
-                        <br>
-                        <h1>CABLE</h1>
-                        <p>%99.9 Pure Copper with mmcx <br> Connectors; 2.5mm, 3.5mm, 4,4mm</p>
-                        <br>
-                        <h1>Accessories</h1>
-                        <p>Copplinn Leather Case <br>
-                            Leather Cable Organizer <br>
-                            S, M, L  Size Eartips <br>
-                            Audio Pro Foam Tips <br>
-                            Solid Walnut Wooden Box <br>
-                            </p>
-                        <br>
-                        <h1>Warranty</h1>
-                        <p>1 Year Warranty Include Cable <br>VIP Customer Care Service
-                        </p>
-                        <br>    
-                        <h1>Personalized</h1>
-                        <p>Yes. <br>Cable(silver) <br>Cable(length) <br>
-                            
-                            </p>
-                        <br>
-                        </div>  
-                </div>
-            </div>
+      </div>
+
+      <div id="Alula+" class="duoTabcontent">
+        <div class="row">
+          <div class="right">
+            <img src="/img/plus.png" alt="">
+          </div>
+          <!-- ---- -->
+          <div class="left">
+        <h3>Alula +</h3>
+        <p>Driver: 2 Way Electro Magneto-Static woofer and tweeter.<br>
+          <li>20-40000 Hz Frequency Range</li>
+          <li>16 ohm@1kHz Impedance</li>
+          <li><%0.1@1kHz THD</li>
+           <br>
+          Isolation: -23 dB <br>
+          Cable: %99.9 pure copper or silver options with mmcx and vibration stabilizer. <br>
+          Connector: 2.5mm, 3.5mm, 4.4mm options <br>
+
+         </p>
+        <a href="https://www.etsy.com/shop/CopplinnSound" target="_blank" rel="noopener noreferrer">Buy Now</a>
+          </div>
         </div>
     </section>
-    <section id="titanium">
-        <div class="space"></div>
-        <div class="titaniumOne">
-            <h1>Frequency Filtering System</h1>
-            <p>The hearing curves show a significant a peak sensitivity around 3500 -4000 Hz. There is another enhanced 
-              sensitivity region at about 13,500 Hz which may be associated with the third harmonic resonance of the auditory 
-              canal. The Frequency Filtering System block these resonance frequencies. Delivers clear and comprehensive vocal 
-              performance.</p>
+    <section class="kolaj"></section>
+    <section class="comp" id="titanium">
+      <div class="row">
+            <div class="left">
+              <h3>Titanium Nozzle</h3>
+              <p>Thanks to the titanium nozzle and foam tips, it blocks external sounds up to 25 db. You get away from the city noise. Other people's conversations don't bother you. You do not hear engine noise in public transport. You can enjoy the peace of music even at low volume.</p>
+            </div>
+            <!-- ---- -->
+            <div class="right">
+              <img class="tnozzle" src="/img/TitaniumNozzle.webp" alt="">
+            </div>
+      </div>
+      <!-- --------------Second Row -->
+      <div class="row">
+        <div class="right">
+          <img src="/img/Accessories.webp" alt="">
         </div>
-       
-        <!-- -- -->
-        <div class="titaniumTwo">
-         <h1>Titanium Nozzle</h1>
-         <p>Thanks to the titanium nozzle and foam tips, it blocks external sounds up to 25 db. You get away from the city noise.
-            Other people's conversations don't bother you. You do not hear engine noise in public transport. You can enjoy the 
-            peace of music even at low volume.</p>
+        <!-- ---- -->
+        <div class="left compText">
+          <h3>Accessories</h3>
+          <p>
+            Solid Walnut Box <br>
+            Leather Carrying Case <br>
+            Leather Cable Organizator <br>
+            Comply Foam AudioPro Tips ( 1 set) <br>
+            S, M, L sizes silicone ear tips
+          </p>
+        </div>
+  </div>
+    </section>
+    <section class="secondLine">
+      <div class="left">
+        <h2>Cable Technology</h2>
+      </div>
+      <!-- -- -->
+      <div class="right">
+        <img src="/img/cable.png" alt="">
+      </div>
+    </section>
+    <section class="quoteSlider" id="reviews">
+
+        <div id="sidePadding" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="left">
+                  <img src="img/Aegean Olive.webp">
+                </div>
+                <!-- - -->
+                <div class="right">
+                  <h2>Alula +</h2>
+                  <p>Alula+ has landed, and So far, I’m utterly over the moon. The Turkish reputation for premium craftsmanship reall y displays itself in the fit, finish of the entire package. Only the first day, so I haven’t had a whole lot of time to evaluate vs my other headphones; but, from the box, no burn in, there’s a wonderful magic to the detail, intimacy of the recordings (especially jazz, acoustic pieces (Patricia Barber, Dominique Fils Aimé are especially wonderful)).
+                  </p>
+                  <a href="#" target="_blank" rel="noopener noreferrer">- Todd Dubbled</a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="left">
+                  <img src="img/gercekDorman.webp">
+                </div>
+                <!-- - -->
+                <div class="right">
+                  <h2>Alula</h2>
+                  <p>Mid frequencies and vocals are very clean and enjoyable to listen to. The trebles provide a very comfortable and spacious presentation. I used it while playing drums, mixing and mastering. The isolation and other instruments it provided while playing the drums made me choose Alula..
+                  </p>
+                  <a href="https://beatmakersacademy.com/" target="_blank" rel="noopener noreferrer">- Gerçek Dorman</a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="left">
+                  <img src="img/caganTunali.webp">
+                </div>
+                <!-- - -->
+                <div class="right">
+                  <h2>Alula</h2>
+                  <p>Great design! A soft and transparent headphones, especially the treble frequencies are extremely soft. I strongly recommend you to try it. You will be able to enjoy music on the move..
+                  </p>
+                  <a href="https://www.instagram.com/cagantunali/" target="_blank" rel="noopener noreferrer">- Cagan Tunalı</a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="left">
+                  <img src="img/Peruvian Walnut.webp">
+                </div>
+                <!-- - -->
+                <div class="right">
+                  <h2>Alula</h2>
+                  <p>The Copplinn Team has done a great job! 🌟 The first thing that comes to mind when I see these designer headphones ... The past seems to have adapted to the present ... It is so obvious that everything has been carefully considered from the cable to the box! And how this headphones goes beyond the "headphones" idea and turns into an object of desire ... ✨ I have no words to say about the quality of its sound anyway! May the roads be clear! Good luck! 🍀
+                    </p>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">- Designer and Color Specialist</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
-         <!-- -- -->
-         <div class="titaniumThree">
-          <h1>Wood Pore Acoustics</h1>
-          <p>We examined the pore structures of the trees by magnifying them 10 times under the microscope. For Copplinn Headphones, 
-            we combined the pro audio drivers with exotic woods (Black Cherry, Bastogne Walnut, Santos Mahogany, Aegean Olive). The 
-            pores of the special woods highlight the specific sound characters.</p>
-         </div>
-       
-    
-        </section>
     </section>
-    <section id="alulaNext">
-        <div class="space" ></div>
-        <div class="alulaText">
-        <h1>Relic</h1>
-        <p> Memories are sacred to all of us. They want to be remembered. <br>
-            Thanks to hearing, halographic structures in our brain allow us to re-enact our memories. <br>
-           <strong>Clear and detailed </strong> sound is the most important factor for us to feel the transfer of emotions in our memories better.</p>
-        <!-- -- -->
-    </div>
-        <div  class="emo">
-        <h1>Emotions</h1>
-        <p>Alula's sound can stimulate holograms in our brain, making you feel your emotions deeper.</p>
-    </div>
-    </section>
-    <!-- <section id="tech">
-        <img src="img/techCover.webp" class="techCover" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="1000"   alt="">
-    </section> -->
     <section id="show">
         <div class="row"  id="warranty">
             <div class="card tilt">
-                <i class="fa fa-leaf" ></i>
+                <i class="fa fa-recycle" ></i>
                 <h2>ALULA Made <br> From %99 Natural Materials</h2>
                 <p>We use %99 recyclable material.</p>
                 <ul>
@@ -315,62 +366,9 @@
                 <p>Designed and produced with 8 years of knowledge and manual labor.</p>
             </div>
             <!-- -- -->
-            <div class="card">
-                <i class="fa fa-comments"></i>
-                <h2>Be Friend.</h2>
-                <p>Satisfied customers thanks to a dedicated and fast response system.</p>
-            </div>
-            <!-- - -->
-        </div>    
+            </div>    
     </section>
-    
-  
-    <section id="reviews">
-        <div class="slideshow-container">
-
-            <div class="mySlides">
-              <q>Mid frequencies and vocals are very clean and enjoyable to listen to. The trebles provide a very comfortable and spacious presentation. I used it while playing drums, mixing and mastering. The isolation and other instruments it provided while playing the drums made me choose Alula..</q>
-              <p class="author">- Gerçek Dorman</p>
-            </div>
-            
-            <div class="mySlides">
-              <q>Alula+ has landed, and So far, I’m utterly over the moon. The Turkish reputation for premium craftsmanship reall
-                y displays itself in the fit, finish of the entire package. Only the first day, so I haven’t had a whole lot of time
-                to evaluate vs my other headphones; but, from the box, no burn in, there’s a wonderful magic to the detail, intimacy of the recordings (especially jazz, acoustic pieces (Patricia Barber, Dominique Fils Aimé are especially wonderful)). Early note says they’ll be weekend morning jazz and coffee kind of monitor. With that being said, very engaging and enthusiastic company, who really stand behind their product (great music recommendations too). I’ll add to this as I listen more. High marks so far.</q>
-              <p class="author">- Todd Dubbeld</p>
-            </div>
-            
-            <div class="mySlides">
-              <q>Great design!
-                A soft and transparent headphones, especially the treble frequencies are extremely soft. I strongly recommend you to try it. You will be able to enjoy music on the move..</q>
-              <p class="author">- Cagan TUNALI</p>
-            </div>
-
-            <div class="mySlides">
-              <q>The Copplinn Team has done a great job! 🌟 The first thing that comes to mind when I see these designer
-                 headphones ... The past seems to have adapted to the present ... It is so obvious that everything has been 
-                 carefully considered from the cable to the box! And how this headphones goes beyond the "headphones" idea and 
-                 turns into an object of desire ... ✨ I have no words to say about the quality of its sound anyway! May the 
-                 roads be clear! Good luck! 🍀</q>
-              <p class="author">- Designer and Color Specialist</p>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)"><i style="font-weight: 400;" class=" fa fa-angle-left"></i></a>
-            <a class="next" onclick="plusSlides(1)"><i style="font-weight: 400;" class=" fa fa-angle-right"></i></a>
-            
-            </div>
-            
-            <div class="dot-container">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-              <span class="dot" onclick="currentSlide(4)"></span> 
-            </div>
-            
-    </section>
-    
     <section id="contact">
-        <div class="space"></div>
         <h1> Contact <span>COPPLINN</span></h1>
         <div class="social">
             <ul>
@@ -381,17 +379,17 @@
             </ul>
        
         </div>
-    </section>
-    <a href="http://bit.ly/siteds" target="_blank" rel="noopener noreferrer"><img src="img/ds.png" alt="" class="ds"></a> 
+    
+      </section>
+    <a href="https://dsware.dsfist.com" target="_blank" rel="noopener noreferrer"><img src="https://dsfist.com/img/dsfist.png" alt="" class="ds"></a> 
     <br>
     <address class="copy">© 2021 All Rights Reserved by &nbsp; <a href="index.html" style="color: rgba(219, 208, 173, 0.816);"> COPPLINN</a> </address>
-<div class="cookie">
-    <address><span class="hideCookie">This website uses cookies to provide you with the best communication experience. 
-        If you stay on the site, you accept the </span><strong id="termsBtn" >terms</strong>.</address>
-</div>
+    <div class="cookie">
+        <address><span class="hideCookie">This website uses cookies to provide you with the best communication experience. 
+            If you stay on the site, you accept the </span><strong id="termsBtn" >terms</strong>.</address>
+    </div>
 <!-- The Modal -->
 <div id="termsModal" class="modal">
-
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span> <br><br>
@@ -664,69 +662,68 @@
   </div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
 <script>
 console.log('Welcome To COPPLINN')
 
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-slider', {
+      type    : 'loop',
+    } ).mount();
+
+  } );
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#sidePadding',{
+      type    : 'loop',
+    } ).mount();
+    
+  } );
+
+
+  function openProduct(evt, productName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("duoTabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(productName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defOpen").click();
 
 // cookie animation
-// The debounce function receives our function as a parameter
 const debounce = (fn) => {
-
-// This holds the requestAnimationFrame reference, so we can cancel it if we wish
 let frame;
-
-// The debounce function returns a new function that can receive a variable number of arguments
 return (...params) => {
-  
-  // If the frame variable has been defined, clear it now, and queue for next frame
   if (frame) { 
     cancelAnimationFrame(frame);
   }
-
-  // Queue our function call for the next frame
   frame = requestAnimationFrame(() => {
-    
-    // Call our function and pass any params we received
     fn(...params);
   });
-
 } 
 };
-
-
-// Reads out the scroll position and stores it in the data attribute
-// so we can use it in our stylesheets
+// -----------
 const storeScroll = () => {
 document.documentElement.dataset.scroll = window.scrollY;
 }
-
-// Listen for new scroll events, here we debounce our `storeScroll` function
 document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-// Update scroll position for first time
 storeScroll();
-
-
-// Get the modal
 var modal = document.getElementById("termsModal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("termsBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -734,6 +731,14 @@ window.onclick = function(event) {
 }
 
 AOS.init();
+
+// Tilt JS 
+VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 15,
+    speed: 5000,
+    
+
+	});
 
  function toggleMenu(){
           var menuToggle = document.querySelector('.menuToggle');
@@ -746,89 +751,7 @@ AOS.init();
  document.getElementById('loading').style.display = 'none';
  };
 
-
-
-var slideIndex = 1;
-
-var myTimer;
-
-var slideshowContainer;
-
-window.addEventListener("load",function() {
-    showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 8000);
-  
-    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-  
-    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-  
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
-})
-
-// NEXT AND PREVIOUS CONTROL
-function plusSlides(n){
-  clearInterval(myTimer);
-  if (n < 0){
-    showSlides(slideIndex -= 1);
-  } else {
-   showSlides(slideIndex += 1); 
-  }
-  
-  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  
-  if (n === -1){
-    myTimer = setInterval(function(){plusSlides(n + 2)}, 12000);
-  } else {
-    myTimer = setInterval(function(){plusSlides(n + 1)}, 12000);
-  }
-}
-
-//Controls the current slide and resets interval if needed
-function currentSlide(n){
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 12000);
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-pause = () => {
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(slideIndex)}, 12000);
-}
-
-resume = () =>{
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(slideIndex)}, 12000);
-}
-
-  	VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 15,
-    speed: 5000,
-    
-
-	});
-
-</script>
-	<!--Start of Tawk.to Script-->
- <script type="text/javascript">
+// Start of Tawk.to Script
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -839,6 +762,6 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script> 
-<!--End of Tawk.to Script-->
+
 </body>
 </html>
