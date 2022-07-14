@@ -1179,7 +1179,7 @@ html:not([data-scroll='0']) .cookie {
     }
     .showCards .hCard{
         width: 300px;
-        height: 300px;
+        height: auto;
     }
     .showCards img{width: 225px;}
     .hCardText h1{font-size: 16px;}
@@ -1204,7 +1204,7 @@ html:not([data-scroll='0']) .cookie {
     .duoTabcontent .row {
         flex-direction: column;
     }
-    .duoTab{height: 75vh;}
+    .duoTab{height: auto;}
     .duoTab .right{
         width: 90vw;
         height: 22vh !important;
@@ -1236,7 +1236,8 @@ html:not([data-scroll='0']) .cookie {
     .kolaj{
         background: url(/img/kolajRes.png);
         background-repeat:no-repeat;
-        height: 85vh;
+        height: 110vh;
+        margin: 5vh 0 -5vh 0;
         background-size: 100%;
     }
     /* -------Component------ */
