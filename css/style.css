@@ -339,6 +339,9 @@ a{
     padding-top: 15px;
     float: right;
 }
+/* Where to buy modal  */
+
+
 
 .woodPore{
     font-size: 45px;
@@ -479,16 +482,23 @@ a{
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
     font-size: 20px;
+    font-weight: 600;
     padding: 15px 30px;
     border-radius: 50px;
-    background-color: black;
-    color: var(--gold);
-}
-.duoTabcontent a:hover{
     background-color: var(--gold);
     color: black;
+    animation: buyReflect 2s ease infinite;
+    border: 3px solid black;
+}
+@keyframes buyReflect{
+    0%{border: 3px solid black;}
+    40%{border: 3px solid var(--gold)}
+    100%{border: 3px solid black}
+}
+.duoTabcontent a:hover{
+    background-color: black;
+    color: var(--gold);
     font-weight: 600;
-    padding: 18px 40px;
 }
     .duoTab .left{
         padding: 50px;
@@ -587,6 +597,14 @@ a{
 .store:hover{
     background-color: #DDD3B6;
     color: black;
+}
+.where .store{
+    background-color: #DDD3B6;
+    color: black;
+}
+.where .store:hover{
+    background-color: #000000;
+    color: #DDD3B6;
 }
 /* -----secondLine */
 .secondLine{
