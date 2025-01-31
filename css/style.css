@@ -12,7 +12,7 @@
   }
   body::-webkit-scrollbar {
     width: 5px;
-
+  
   }
   body {
       background-color:rgb(0, 0, 0);
@@ -21,7 +21,7 @@
   }
   body::-webkit-scrollbar-track {
     background: var(--scrollbarBG);
-
+  
   }
   body::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG) ;
@@ -36,7 +36,7 @@
   }
   *.warpper *::-webkit-scrollbar {
     width: 5px;
-
+  
   }
   .warpper * {
     scrollbar-width:thick;
@@ -44,7 +44,7 @@
   }
   .warpper *::-webkit-scrollbar-track {
     background: var(--scrollbarBG);
-
+  
   }
   .warpper *::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG) ;
@@ -122,12 +122,12 @@ a{
     0%{background-color: rgba(0, 0, 0, 0.07);}
     10%{background-color: rgba(0, 0, 0, 0.07);}
     100%{background-color: rgba(0, 0, 0, 0.795);}
-
+    
 }
 @keyframes cop {
     0%{color: black;}
     100%{color: #beb08a;}
-
+    
 }
 
 .topnav h1{
@@ -339,7 +339,6 @@ a{
     padding-top: 15px;
     float: right;
 }
-/* Where to buy modal  */
 
 .woodPore{
     font-size: 45px;
@@ -471,7 +470,7 @@ a{
     from {opacity: 0;}
     to {opacity: 1;}
   }
-
+  
   @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -480,7 +479,6 @@ a{
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
     font-size: 20px;
-    font-weight: 600;
     padding: 15px 30px;
     border-radius: 50px;
     background-color: black;
@@ -489,17 +487,6 @@ a{
 .duoTabcontent a:hover{
     background-color: var(--gold);
     color: black;
-    animation: buyReflect 2s ease infinite;
-    border: 3px solid black;
-}
-@keyframes buyReflect{
-    0%{border: 3px solid black;}
-    40%{border: 3px solid var(--gold)}
-    100%{border: 3px solid black}
-}
-.duoTabcontent a:hover{
-    background-color: black;
-    color: var(--gold);
     font-weight: 600;
     padding: 18px 40px;
 }
@@ -600,14 +587,6 @@ a{
 .store:hover{
     background-color: #DDD3B6;
     color: black;
-}
-.where .store{
-    background-color: #DDD3B6;
-    color: black;
-}
-.where .store:hover{
-    background-color: #000000;
-    color: #DDD3B6;
 }
 /* -----secondLine */
 .secondLine{
@@ -826,7 +805,7 @@ a{
 #titanium .titbuy{
     width: 25%;
     margin-top: 38%;   
-
+     
 }
 #titanium .titaniumThree{
     position: absolute;
@@ -915,7 +894,7 @@ a{
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0);
-
+    
 }
 
 /* The dots/bullets/indicators */
@@ -1069,7 +1048,7 @@ html:not([data-scroll='0']) .cookie {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
   }
-
+  
   /* Modal Content */
   .modal-content {
     background-color: #fefefe00;
@@ -1077,7 +1056,7 @@ html:not([data-scroll='0']) .cookie {
     padding: 20px;
     width: 80%;
   }
-
+  
   /* The Close Button */
   .close {
     color: #aaaaaa;
@@ -1085,14 +1064,14 @@ html:not([data-scroll='0']) .cookie {
     font-size: 28px;
     font-weight: bold;
   }
-
+  
   .close:hover,
   .close:focus {
     color: var(--gold);
     text-decoration: none;
     cursor: pointer;
   }
-
+  
 .wrapper h2{
     color:#000;
     text-align:center;
@@ -1200,7 +1179,7 @@ html:not([data-scroll='0']) .cookie {
     }
     .showCards .hCard{
         width: 300px;
-        height: auto;
+        height: 300px;
     }
     .showCards img{width: 225px;}
     .hCardText h1{font-size: 16px;}
@@ -1225,7 +1204,7 @@ html:not([data-scroll='0']) .cookie {
     .duoTabcontent .row {
         flex-direction: column;
     }
-    .duoTab{height: auto;}
+    .duoTab{height: 75vh;}
     .duoTab .right{
         width: 90vw;
         height: 22vh !important;
@@ -1257,8 +1236,7 @@ html:not([data-scroll='0']) .cookie {
     .kolaj{
         background: url(/img/kolajRes.png);
         background-repeat:no-repeat;
-        height: 110vh;
-        margin: 5vh 0 -5vh 0;
+        height: 85vh;
         background-size: 100%;
     }
     /* -------Component------ */
@@ -1368,7 +1346,7 @@ html:not([data-scroll='0']) .cookie {
   }
   body::-webkit-scrollbar {
     width: 5px;
-
+  
   }
   body {
     scrollbar-width:thick;
@@ -1376,7 +1354,7 @@ html:not([data-scroll='0']) .cookie {
   }
   body::-webkit-scrollbar-track {
     background: var(--scrollbarBG);
-
+  
   }
   body::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG) ;
@@ -1443,7 +1421,7 @@ html:not([data-scroll='0']) .cookie {
     padding:15px;  
   }
   /* ---SideBar */
-
+  
 .menuToggle{
     transition: 0.4s ease-in-out;
     position: fixed;
